@@ -1,0 +1,59 @@
+.ac-gn-header {
+  display: flex;
+  justify-content: center;
+  height: 48px;
+  width: 100%;
+  background-color: rgba(19, 19, 19, 0.77);
+  position: fixed;
+}
+
+.appleIcon {
+  font-size: 1.5em;
+}
+
+h1 {
+  text-align: center;
+  font-size: 44px;
+  
+}
+
+h2 {
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: 0.01em;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  align-items: center;
+}
+
+.content1 {
+  display: flex;
+  flex-direction: row;
+  height: 644px;
+  width: 100%;
+  background-color: #F9F0EB;
+  justify-content: center;
+  align-items: flex-end;
+  
+}
+
+.content1 img {
+  border-color: #F9F0EB;
+  width: 561px;
+  height: 395px;
+  background-image: url("./img/iphone_8_large.jpg");
+  background-repeat: no-repeat;
+  
+}
+
+
+
+.nav li{
+
+  font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  color: #fff;
+  list-style-type: none;
+}
