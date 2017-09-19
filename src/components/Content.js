@@ -16,6 +16,18 @@ export default class Content extends React.Component {
                     <h3> Say hello to the future </h3>
                     <img/>
                 </div>
+
+                <div className="content3">
+                    <img className="watchSVG" />
+                    <h3> Freedom calls </h3>
+                    <img/>
+                </div>
+
+                <div className="tileContent">
+                    <div className="tv4kTile">
+                        
+                    </div>
+                </div>
               
             </div>
         );
