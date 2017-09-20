@@ -3,15 +3,25 @@
   justify-content: center;
   height: 48px;
   width: 100%;
-  background-color: rgba(50, 48, 47, 0.95);
+  background-color: rgb(50, 48, 47);
   position: fixed;
+  margin-top: -48px;
+  opacity: 0.9;
+
 }
 
-.appleIcon {
-  font-size: 1.5em;
+.nav .appleIcon {
+  font-size: 24px;
+  font-weight: 100;
 }
 
-
+.content1 h2 {
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600px;
+    line-height: 20px;
+}
 
 h2 {
   display: block;
@@ -19,7 +29,7 @@ h2 {
   font-size: 50px;
   font-weight: 600px;
   line-height: 20px;
-  padding-top: 65px;
+  margin-top: 65px;
   
 }
 
@@ -40,6 +50,7 @@ h3 {
 }
 
 .content1 {
+  margin-top: 48px;
   display: flex;
   flex-direction: column;
   height: 692px;
@@ -56,8 +67,6 @@ h3 {
   border-color: #F9F0EB;
   width: 673px;
   height: 505px;
-  background-image: url("./img/iphone_8_largetall.jpg");
-  background-repeat: no-repeat;
 }
 
 .content2 {
@@ -66,18 +75,19 @@ h3 {
   height: 692px;
   width: 100%;
   background-color: #FAFAFA;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: center;
+  border-top-color: white;
+  border-bottom-color: white;
 }
 
 
 
 .content2 img {
-  background-image: url("./img/iphone_x_largetall.jpg");
   width: 981px;
   height: 207px;
-  margin-top: 20px;
-  background-repeat: no-repeat;
+  margin-top: 137px;
+  margin-bottom: 137px;
 }
 
 .content3 {
@@ -87,28 +97,32 @@ h3 {
   background-color: #FAFAFA;
   justify-content: flex-start;
   align-items: center;
+  border-color: red;
+  border: solid;
 }
 
 .content3 .watchSVG {
   height: 72px;
   width: 187px;
-  background-image: url('./img/svg/watch_series_3_large.svg');
-  background-repeat: no-repeat;
-  padding-top: 65px;
+  padding-top: 60px;
+  margin-bottom: 27px;
 }
 
 .content3 img {
   border-color: #FAFAFA;
-  width: 673px;
+  width: 977px;
   height: 434px;
-  background-image: url("./img/watch_largetall.jpg");
-  background-repeat: no-repeat;
 }
 
 .nav li{
+  display: inline block;
   font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
   color: #fff;
   list-style-type: none;
+  font-weight: 300;
+  font-size: 14px;
+  z-index: 1;
+  max-width: 62.9px;
 }
 
 .nav li:hover{
@@ -122,22 +136,42 @@ h3 {
 .footer {
   height: 381px;
   background-color: #F2F2F2;
-
+  display: flex;
+  justify-content: center;
+  margin-right: 50%;
+  margin-left: 50%;
+  
 }
 
 .footerlist {
   margin-right: 20px;
   height: 214px;
-  width: 174px;
+  width: 196px;
 }
 
 .footer h4 {
   font-size: 11px;
   font-weight: 600;
+  line-height: 1.27273;
+  margin-bottom: 6px;
+  padding-top: 40px;
+  width: 196px;
 }
 
 .footer li {
   font-size: 11px;
   font-weight: 400;
   list-style-type: none;
+  line-height: 1.27273;
+  margin-bottom: 6px;
+}
+
+.footer li:hover {
+  text-decoration: underline;
+}
+
+.footer span {
+  width: 980px;
+  height: 80px;
+  color: blue;
 }

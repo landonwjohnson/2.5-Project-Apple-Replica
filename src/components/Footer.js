@@ -14,6 +14,56 @@ export default class Content extends React.Component {
                             <li> Watch </li>
                             <li> TV </li>
                             <li> Music </li>
+                            <li> iTunes </li>
+                            <li> HomePod </li>
+                            <li> iPod touch </li>
+                            <li> Accessories </li>
+                            <li> Gift Cards </li>
+                        </ul>
+                    </div>
+
+                    <div className="footerList">
+                        <ul> <h4> Apple Store </h4> 
+                            <li> Find a Store </li>
+                            <li> Genius Bar </li>
+                            <li> Today at Apple </li>
+                            <li> Apple Camp </li>
+                            <li> Field Trip </li>
+                            <li> Apple Store App </li>
+                            <li> Refurbished and Clearance </li>
+                            <li> Financing </li>
+                            <li> Reuse and Recycling </li>
+                            <li> Order Status </li>
+                            <li> Shopping Help </li>
+                        </ul>
+                    </div>
+                    <div className="footerList">
+                        <ul> <h4> For Education </h4> 
+                            <li> Apple and Education</li>
+                            <li> Shop for College </li>
+                        </ul>
+                    </div>
+                    <div className="footerList">
+                        <ul> <h4> For Business </h4> 
+                            <li> Apple and Business </li>
+                            <li> Shop for Business </li>
+                        </ul>
+                    </div>
+                    <div className="footerList">
+                        <ul> <h4> Account </h4> 
+                            <li> Manage Your Apple ID </li>
+                            <li> Apple Store Account </li>
+                            <li> iCloud.com </li>
+                        </ul>
+                    </div>
+                    <div className="footerList">
+                        <ul> <h4> About Apple </h4>
+                            <li> Newsroom </li>
+                            <li> Apple Leadership </li>
+                            <li> Job Opportunities </li>
+                            <li> Investors </li> 
+                            <li> Events </li>
+                            <li> Contact Apple </li>
                         </ul>
                     </div>
                 </div>
