@@ -9,7 +9,7 @@ import watchLarge from './../img/watch_largetall.jpg';
 export default class Content extends React.Component {
     render() {
         return (
-            <div>
+            <div className="content">
                 <div className="content1">
                     <h2> iPhone 8 </h2>
                     <h3> A new generation of iPhone </h3>

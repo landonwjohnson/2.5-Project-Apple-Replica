@@ -7,7 +7,8 @@ export default class Content extends React.Component {
             <div>
                 <div className="footer">
                     <div className="footerlist">
-                        <ul> <h4>Shop and Learn</h4>
+                        <ul> 
+                            <h4>Shop and Learn</h4>
                             <li> Mac </li>
                             <li> iPad </li>
                             <li> iPhone </li>
@@ -23,7 +24,8 @@ export default class Content extends React.Component {
                     </div>
 
                     <div className="footerList">
-                        <ul> <h4> Apple Store </h4> 
+                        <ul> 
+                            <h4> Apple Store </h4> 
                             <li> Find a Store </li>
                             <li> Genius Bar </li>
                             <li> Today at Apple </li>
@@ -38,13 +40,13 @@ export default class Content extends React.Component {
                         </ul>
                     </div>
                     <div className="footerList">
-                        <ul> <h4> For Education </h4> 
+                        <ul> 
+                            <h4> For Education </h4> 
                             <li> Apple and Education</li>
                             <li> Shop for College </li>
                         </ul>
-                    </div>
-                    <div className="footerList">
-                        <ul> <h4> For Business </h4> 
+                        <ul> 
+                            <h4> For Business </h4> 
                             <li> Apple and Business </li>
                             <li> Shop for Business </li>
                         </ul>
@@ -54,6 +56,16 @@ export default class Content extends React.Component {
                             <li> Manage Your Apple ID </li>
                             <li> Apple Store Account </li>
                             <li> iCloud.com </li>
+                        </ul>
+
+                        <ul> 
+                            <h4>Apple Values</h4>
+                            <li> Accessibility  </li>
+                            <li> Education </li>
+                            <li> Environment </li>
+                            <li> Inclusion and Diversity </li>
+                            <li> Privacy </li>
+                            <li> Supplier Responsibility </li>
                         </ul>
                     </div>
                     <div className="footerList">
@@ -65,6 +77,11 @@ export default class Content extends React.Component {
                             <li> Events </li>
                             <li> Contact Apple </li>
                         </ul>
+                    </div>
+                    <div className="footerBottom">
+                        <p>More ways to shop: Visit an Apple Store, call 1-800-MY-APPLE, or find a reseller</p>
+                        <span className = "split" />
+                        <p> Copyright © 2017 Apple Inc. All rights reserved. </p>
                     </div>
                 </div>
             
