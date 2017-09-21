@@ -4,6 +4,8 @@ import iPhone8GoldLarge from '../img/iphone_8_largetall.jpg';
 import iPhone10XLarge from '../img/iphone_x_largetall.jpg';
 import watchTitleSVG from '../img/svg/watch_series_3_large.svg';
 import watchLarge from './../img/watch_largetall.jpg';
+import TVWonderWoman from './../img/tv_4k_large.jpg';
+import Ios11 from './../img/ios_large.jpg';
 
 
 export default class Content extends React.Component {
@@ -30,7 +32,10 @@ export default class Content extends React.Component {
 
                 <div className="tileContent">
                     <div className="tv4kTile">
-                        
+                        <img className="wonderWoman" src= {TVWonderWoman} />
+                    </div>
+                    <div className="iOS11div">
+                        <img src = { Ios11 } />
                     </div>
                 </div>
               
