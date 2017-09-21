@@ -14,10 +14,6 @@
 
   }
 
-  .nav {
-    padding-left: 22%;
-    padding-right: 22%;
-  }
   .nav .appleIcon {
     height: 19px;
     width: 19px;
@@ -59,130 +55,223 @@
     transition: color 0.3s;
     transition-timing-function: ease-in-out;
   }
-/*CONTENT*/
-  .content1 h2 {
-      display: block;
-      text-align: center;
-      font-size: 50px;
-      font-weight: 600px;
-      line-height: 20px;
-  }
 
-  .content h2 {
-    display: block;
-    text-align: center;
-    font-size: 50px;
-    font-weight: 600px;
-    line-height: 20px;
-    margin-top: 65px;
-  }
-
-  .content h3 {
-    bottom: 35px;
-    position: relative;
-    text-align: center;
-    font-size: 22px;
-    letter-spacing: 0.01em;
-    font-weight: 200;
-
-  }
   .nav {
     display: flex;
     justify-content: space-between;
     width: 70%;
     align-items: center;
+    padding-left: 22%;
+    padding-right: 22%;
   }
+/*CONTENT*/
+  /*content 1*/
 
-  .content1 {
-    margin-top: 48px;
-    display: flex;
-    flex-direction: column;
-    height: 692px;
-    width: 100%;
-    background-color: #F9F0EB;
-    justify-content: flex-end;
-    align-items: center;
-    overflow: visible;
-    flex-grow: 1;
-    z-index: 1;
-  }
+    .content1 h2 {
+        display: block;
+        text-align: center;
+        font-size: 50px;
+        font-weight: 600px;
+        line-height: 20px;
+    }
 
-  .content1 img {
-    border-color: #F9F0EB;
-    width: 673px;
-    height: 505px;
-  }
+    .content1 {
+      margin-top: 48px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      height: 692px;
+      width: 100%;
+      background-color: #F9F0EB;
+      
+      overflow: visible;
+      flex-grow: 1;
+      z-index: 1;
+    }
 
-  .content2 {
-    display: flex;
-    flex-direction: column;
-    height: 692px;
-    width: 100%;
-    background-color: #FAFAFA;
-    justify-content: flex-end;
-    align-items: center;
-    border-top-color: white;
-    border-bottom-color: white;
-    border-top: solid;
-    border-color: white;
-  }
+    .content1 img {
+      border-color: #F9F0EB;
+      width: 673px;
+      height: 505px;
+    }
 
-  .content2 img {
-    width: 981px;
-    height: 207px;
-    margin-top: 137px;
-    margin-bottom: 137px;
-  }
+  /*content 2*/
 
-  .content3 {
-    display: flex;
-    flex-direction: column;
-    height: 692px;
-    background-color: #FAFAFA;
-    justify-content: flex-start;
-    align-items: center;
-    border-top: solid;
-    border-color: white;
-  }
+    .content h2 {
+      display: block;
+      text-align: center;
+      font-size: 50px;
+      font-weight: 600px;
+      line-height: 20px;
+      margin-top: 65px;
+     }
 
-  .content3 .watchSVG {
-    height: 72px;
-    width: 187px;
-    padding-top: 60px;
-    margin-bottom: 27px;
-  }
+    .content2 {
+      display: flex;
+      flex-direction: column;
+      height: 692px;
+      width: 100%;
+      background-color: #FAFAFA;
+      justify-content: flex-end;
+      align-items: center;
+      border-top-color: white;
+      border-bottom-color: white;
+      border-top: solid;
+      border-color: white;
+     }
 
-  .content3 img {
-    border-color: #FAFAFA;
-    width: 977px;
-    height: 434px;
-  }
+    .content2 img {
+      width: 981px;
+      height: 207px;
+      margin-top: 137px;
+      margin-bottom: 137px;
+    }
+  /*content 3*/
 
-  .tileContent {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+    .content h3 {
+      bottom: 35px;
+      position: relative;
+      text-align: center;
+      font-size: 22px;
+      letter-spacing: 0.01em;
+      font-weight: 200;
+    }
 
-  }
+    .content3 {
+      display: flex;
+      flex-direction: column;
+      height: 692px;
+      background-color: #FAFAFA;
+      justify-content: flex-start;
+      align-items: center;
+      border-top: solid;
+      border-color: white;
+    }
 
-  .iOS11div {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    background-color: white;
-    height: 587px;
-    width: 793px;
-    border: solid;
-    border-color: black;
-  }
+    .content3 .watchSVG {
+      height: 72px;
+      width: 187px;
+      padding-top: 60px;
+      margin-bottom: 27px;
+    }
 
-  .iOS11div img {
-    border: solid;
-    border-color: blue;
-    margin-bottom: 40px;
-    width: 516px;
-    height: 369px;
-  }
+    .content3 img {
+      border-color: #FAFAFA;
+      width: 977px;
+      height: 434px;
+    }
+  /*tile content*/
+
+    .tileContent {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .tileContent h4 {
+      font-size: 48px;
+    }
+
+    .tileContent h5 {
+      font-size: 24px;
+      line-height: 1.16667;
+      font-weight: 400;
+      letter-spacing: .009em;
+      font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    }
+   /*tile 1*/
+    .tv4kTile {
+      border: solid;
+      border-color: white;
+      border-width: 12px 6px 6px 12px;
+      height: 587px;
+      width: 793px;
+      }
+   /*tile 2*/
+
+
+    .iOS11Tile {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      background-color: white;
+      height: 587px;
+      width: 793px;
+      border: solid;
+      border-color: white;
+      border-width: 12px 6px 6px 12px;
+      }
+
+    .iOS11Tile h4 {
+      display: block;
+      text-align: center;
+      margin: 0px;
+      }
+
+    .iOS11Tile h5 {
+      display: inline-block;
+      text-align: center;
+      margin-bottom: 0px;
+      padding-bottom: 40px;
+      }
+
+    .iOS11Tile img {
+      display: flex;
+      flex-direction: row;
+      border: solid;
+      border-color: blue;
+      margin-bottom: 40px;
+      }      
+   /*tile 3*/
+    .watchOSTile {
+      height: 587px;
+      width: 793px;
+      background-color: white;
+      border: solid;
+      border-color: white;
+      border-width: 12px 6px 6px 12px;
+      }
+   /*tile 4*/
+    .collegeTile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 587px;
+      width: 793px;
+      background-color: white;
+      border: solid;
+      border-color: white;
+      border-width: 12px 6px 6px 12px;
+      background-image: url("./img/bts_ipad_pro_large.jpg");
+      background-size: cover;
+      background-position-x: 50%; 
+      justify-content: center;
+      }
+
+  /*donate*/
+    .handINhand {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 193px;
+    }
+
+    .handINhand img {
+      height: auto;
+      width: auto;
+    }
+
+    .handINhand p {
+      font-size: 17px;
+      font-weight: 400;
+      color: #111111;
+      font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    }
+
 
 /*FOOTER*/
   .footer {
