@@ -9,6 +9,7 @@ import iOS11 from './../img/ios_large.jpg';
 import watchOS4 from './../img/watchos_large.jpg';
 import collegeDeal from './../img/bts_ipad_pro_large.jpg';
 import handINhand from './../img/hand_in_hand_logo_large.jpg';
+import appleTVlogo from './../img/tv_4k_logo_large.png';
 
 
 export default class Content extends React.Component {
@@ -35,7 +36,14 @@ export default class Content extends React.Component {
 
                 <div className="tileContent">
                     <div className="tv4kTile">
-                        <img src={TVWonderWoman} />
+                        <div className="unit-copy-header">
+                            <div className="unit-header">
+                                <img src={appleTVlogo} />
+                                <div className="sub-header">
+                                    <h5>The 4K HDR era. Now playing</h5>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div className="iOS11Tile">
                         <div className="unit-copy-wrapper">
@@ -72,7 +80,6 @@ export default class Content extends React.Component {
                                 
                             </div>
                         </div>
-                    
                         <img />
                     </div>
                 </div>

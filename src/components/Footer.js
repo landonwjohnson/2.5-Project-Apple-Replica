@@ -1,4 +1,5 @@
 import React from 'react';
+import LocaleFlag from './../img/USflag.png';
 
 
 export default class Content extends React.Component {
@@ -79,9 +80,15 @@ export default class Content extends React.Component {
                         </ul>
                     </div>
                     <div className="footerBottom">
-                        <p>More ways to shop: Visit an Apple Store, call 1-800-MY-APPLE, or find a reseller</p>
+                        <p>More ways to shop: Visit an <a href="#">Apple Store</a>, call 1-800-MY-APPLE, or <a href ="#">find a reseller</a></p>
                         <span className = "split" />
-                        <p> Copyright © 2017 Apple Inc. All rights reserved. </p>
+                        <div className="legal-copyright"> Copyright © 2017 Apple Inc. All rights reserved. </div>
+                        <div className="legal-link"> Privacy Policy </div>
+                        <div className="legal-link"> Terms of Use </div>
+                        <div className="legal-link"> Sales and Refunds </div>
+                        <div className="legal-link"> Legal </div>
+                        <div className="legal-link"> Site Map </div> 
+                        <div className="locale-link"><img src={LocaleFlag}/>  United States </div>
                     </div>
                 </div>
             

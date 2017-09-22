@@ -4,14 +4,18 @@
   .ac-gn-header {
     display: flex;
     justify-content: center;
-    height: 48px;
+    height: 44px;
     width: 100%;
-    background-color: rgb(50, 48, 47);
     position: fixed;
     margin-top: -48px;
-    opacity: 0.9;
     align-items: center;
+    background: rgba(0,0,0,0.8);
+    z-index: 9999;
 
+  }
+
+  .nav ul {
+    width: 100%;
   }
 
   .nav .appleIcon {
@@ -48,6 +52,8 @@
     max-width: 62.9px;
     justify-content: space-around;
     align-items: auto;
+    opacity: 1;
+    outline-offset: -7px;
   }
   
   .nav li:hover{
@@ -67,7 +73,7 @@
 /*CONTENT*/
   /*content 1*/
 
-    .content1 h2 {
+   .content1 h2 {
         display: block;
         text-align: center;
         font-size: 50px;
@@ -84,10 +90,10 @@
       height: 692px;
       width: 100%;
       background-color: #F9F0EB;
-      
       overflow: visible;
       flex-grow: 1;
       z-index: 1;
+      cursor: pointer;
     }
 
     .content1 img {
@@ -119,6 +125,7 @@
       border-bottom-color: white;
       border-top: solid;
       border-color: white;
+      cursor: pointer;
      }
 
     .content2 img {
@@ -147,6 +154,7 @@
       align-items: center;
       border-top: solid;
       border-color: white;
+      cursor: pointer;
     }
 
     .content3 .watchSVG {
@@ -168,6 +176,7 @@
       justify-content: center;
       flex-direction: row;
       flex-wrap: wrap;
+      cursor: pointer;
     }
 
 
@@ -207,7 +216,7 @@
       text-align: center;
       display: block;
       position: relative;
-      margin-top: 10px;
+      margin-top: 0.4em;
       margin-left: auto;
       margin-right: auto;
       text-align: center;
@@ -221,7 +230,35 @@
       border-width: 12px 6px 6px 12px;
       height: 587px;
       width: 793px;
+      background-image: url('./img/tv_4k_large.jpg');
       }
+
+    .tv4kTile .sub-header h5 {
+      color: white;
+      font-size: 24px;
+      line-height: 1.16667;
+      font-weight: 400;
+      letter-spacing: .009em;
+      font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+      margin-top: 0.8em;
+      
+    }
+
+    .unit-header img {
+      text-align: center;
+      max-width: 550px;
+      margin-top: 1.33em;
+      margin-bottom: 0px; 
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
+      letter-spacing: -.003em;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 1.08365;
+      display: block;
+      position: relative;
+    }
    /*tile 2*/
 
     .iOS11Tile {
@@ -281,6 +318,7 @@
       align-items: center;
       justify-content: center;
       height: 193px;
+      cursor: pointer;
     }
 
     .handINhand img {
@@ -315,6 +353,7 @@
 
  .footer ul {
     padding-left: 0%;
+   
  }
 
   .footer h4 {
@@ -338,21 +377,96 @@
   .footer li:hover {
     text-decoration: underline;
     color: #333333;
+    cursor: pointer;
   }
 
-  .footer .footerBottom {
+  .footerBottom {
     font-size: 11px;
     color: #8E8E8B;
     max-width: 980px;
     width: 100%;
-    
-
   }
+
+  .footerBottom a {
+    color: #0070CF; 
+    text-decoration: none;
+    font-size: 1em;
+  }
+
+  .footerBottom a:hover {
+    color: #0070CF; 
+    font-size: 1em;
+    text-decoration: underline;
+  }
+
   
   .footer .footerBottom .split {
     display: block;
     position: relative;
     width: 100%;
     height: 0.5px;
+    border-color: #D6D6D6;
     background-color: #D6D6D6;
+    margin-bottom: 7px;
+    padding-bottom: 0.5px;
   }
+
+  .legal-copyright {
+    margin-top: 3px;
+    margin-right: 30px;
+    float: left;
+  }
+
+  .legal-link {
+    margin-top: 3px;
+    border-right: 1px solid #d6d6d6;
+    display: inline-block;
+    margin-right: 10px;
+    white-space: nowrap;
+    padding-right: 12px;
+    font-size: 1em;
+    color: #555555;
+    font-weight: 600;
+  }
+
+  .locale-link{
+    float: right;
+    height: auto;
+    width: auto;
+    font-size: 1em;
+    color: #555555;
+    font-weight: 600;
+  }
+
+  .locale-link img {
+    vertical-align: middle;
+    padding-left: 5px;
+  }
+
+/* MEDIA */
+
+  /*nav*/
+    @media only screen and (max-width: 735px) {
+      .nav {
+        padding-left: 0;
+        padding-right: 0;
+      }
+      
+      .nav li {
+        display: none;
+      }
+
+      .nav .searchIcon {
+        display: none;
+      }
+
+      .nav .appleIcon {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .nav .cartIcon {
+        width: auto;
+        height: 22px;
+      }
+    }
