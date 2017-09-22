@@ -170,18 +170,51 @@
       flex-wrap: wrap;
     }
 
-    .tileContent h4 {
-      font-size: 48px;
+
+    .unit-copy-wrapper {
+      width: 688px;
+      height: 136.36px;
     }
 
-    .tileContent h5 {
-      font-size: 24px;
-      line-height: 1.16667;
+    .unit-header h4 {
+      text-align: center;
+      width: 88%;
+      max-width: 550px;
+      height: 52px;
+      margin-top: 1.08em;
+      margin-bottom: 0px; 
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
+      letter-spacing: -.003em;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 1.08365;
+      display: block;
+      position: relative;
+      font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+      
+    }
+
+    .sub-header h5 {
+      width: 88%;
+      max-width: 550px;
+      height: 28px;
       font-weight: 400;
-      letter-spacing: .009em;
+      line-height: 1.16667;
+      font-size: 24px;
+      letter-spacing: .009;
+      text-align: center;
+      display: block;
+      position: relative;
+      margin-top: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
       font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
     }
    /*tile 1*/
+
     .tv4kTile {
       border: solid;
       border-color: white;
@@ -191,42 +224,26 @@
       }
    /*tile 2*/
 
-
     .iOS11Tile {
       display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      align-items: center;
+      justify-content: center;
       background-color: white;
       height: 587px;
       width: 793px;
       border: solid;
-      border-color: white;
+      border-color: #FFFFFF;
       border-width: 12px 6px 6px 12px;
-      }
-
-    .iOS11Tile h4 {
-      display: block;
-      text-align: center;
-      margin: 0px;
-      }
-
-    .iOS11Tile h5 {
-      display: inline-block;
-      text-align: center;
-      margin-bottom: 0px;
-      padding-bottom: 40px;
       }
 
     .iOS11Tile img {
-      display: flex;
-      flex-direction: row;
-      border: solid;
-      border-color: blue;
-      margin-bottom: 40px;
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
       }      
    /*tile 3*/
     .watchOSTile {
+      display: flex;
+      justify-content: center;
       height: 587px;
       width: 793px;
       background-color: white;
@@ -234,22 +251,28 @@
       border-color: white;
       border-width: 12px 6px 6px 12px;
       }
+
+    .watchOSTile img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 48px;
+      
+    }
    /*tile 4*/
     .collegeTile {
       display: flex;
-      flex-direction: column;
-      align-items: center;
+      justify-content: center;
       height: 587px;
       width: 793px;
-      background-color: white;
       border: solid;
-      border-color: white;
+      border-color: #FFFFFF;
       border-width: 12px 6px 6px 12px;
       background-image: url("./img/bts_ipad_pro_large.jpg");
       background-size: cover;
       background-position-x: 50%; 
-      justify-content: center;
       }
+      
 
   /*donate*/
     .handINhand {

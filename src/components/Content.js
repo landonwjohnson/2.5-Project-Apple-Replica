@@ -38,21 +38,41 @@ export default class Content extends React.Component {
                         <img src={TVWonderWoman} />
                     </div>
                     <div className="iOS11Tile">
-                        <h4> iOS 11 </h4>
-                        <h5> Available now. </h5>
-                        <img src={ iOS11 } />
+                        <div className="unit-copy-wrapper">
+                            <div className="unit-header">
+                                <h4> iOS 11 </h4>
+                                <div className="sub-header">
+                                    <h5> Available now. </h5>
+                                </div>
+                            </div>
+                            <img src={ iOS11 } />
+                        </div>
                     </div>
                     <div className="watchOSTile">
-                        <h4> watchOS 4 </h4>
-                        <h5> Avilable now. </h5>
-                        <img src={watchOS4} />
+                        <div className="unit-copy-wrapper">
+                                <div className="unit-header">
+                                    <h4> watchOS 4 </h4>
+                                    <div className="sub-header">
+                                            <h5> Available now. </h5>
+                                    </div>
+                                </div>
+                                <img src={watchOS4} />
+                        </div>
                     </div>
                     <div className="collegeTile">
-                        <h4> Last Chance. </h4>
-                        <h5> Buy iPad Pro for college.
-                        <br/>
-                        Get Beats.
-                        </h5>
+                        <div className="unit-copy-wrapper">
+                            <div className="unit-header">
+                                <h4> Last Chance. </h4>
+                                <div className="sub-header">
+                                    <h5> Buy iPad Pro for college.
+                                    <br/>
+                                    Get Beats.
+                                    </h5>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    
                         <img />
                     </div>
                 </div>
