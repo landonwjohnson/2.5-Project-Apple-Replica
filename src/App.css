@@ -1,3 +1,6 @@
+body {
+  user-select: none;
+}
 
 
 /* NAV HEADER */
@@ -11,12 +14,12 @@
     align-items: center;
     background: rgba(0,0,0,0.8);
     z-index: 9999;
-    cursor: pointer;
 
   }
 
   .nav ul {
     width: 100%;
+    
   }
 
   .nav .appleIcon {
@@ -55,12 +58,15 @@
     align-items: auto;
     opacity: 1;
     outline-offset: -7px;
+   
+   
   }
   
   .nav li:hover{
     color: #C2C1C1;
     transition: color 0.3s;
     transition-timing-function: ease-in-out;
+    cursor: pointer;
   }
 
   .nav {
