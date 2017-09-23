@@ -1,9 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import iPhone8GoldLarge from '../img/iphone_8_largetall.jpg';
+import iPhone8GoldSmall from '../img/iphone_8_small.jpg'
 import iPhone10XLarge from '../img/iphone_x_largetall.jpg';
+import iPhone10XSmall from '../img/iphone_x_small.jpg';
 import watchTitleSVG from '../img/svg/watch_series_3_large.svg';
 import watchLarge from './../img/watch_largetall.jpg';
+import watchSmall from './../img/watch_small.jpg';
 import TVWonderWoman from './../img/tv_4k_large.jpg';
 import iOS11 from './../img/ios_large.jpg';
 import watchOS4 from './../img/watchos_large.jpg';
@@ -17,21 +20,24 @@ export default class Content extends React.Component {
         return (
             <div className="content">
                 <div className="content1">
-                    <h2> iPhone 8 </h2>
-                    <h3> A new generation of iPhone </h3>
-                    <img src={iPhone8GoldLarge} />
+                    <h2 className="headline1"> iPhone 8 </h2>
+                    <h3 className="headline2"> A new generation of iPhone </h3>
+                    <img className="iPhone8Large" src={iPhone8GoldLarge} />
+                    <img className="iPhone8Small" src={iPhone8GoldSmall} />
                 </div>
                 
                 <div className="content2">
-                    <h2> iPhone X </h2>
-                    <h3> Say hello to the future </h3>
-                    <img src={iPhone10XLarge} />
+                    <h2 className="headline1"> iPhone X </h2>
+                    <h3 className="headline2"> Say hello to the future </h3>
+                    <img className="iPhone10XLarge" src={iPhone10XLarge} />
+                    <img className="iPhone10XSmall" src={iPhone10XSmall} />
                 </div>
 
                 <div className="content3">
                     <img className="watchSVG" src={watchTitleSVG} />
-                    <h3> Freedom calls </h3>
-                    <img src={watchLarge} />
+                    <h3 className="headline2"> Freedom calls </h3>
+                    <img className="watchLarge" src={watchLarge} />
+                    <img className="watchSmall" src={watchSmall} />
                 </div>
 
                 <div className="tileContent">

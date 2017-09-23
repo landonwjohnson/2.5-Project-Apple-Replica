@@ -18,10 +18,20 @@ export default class Header extends React.Component {
                         <li>TV</li>
                         <li>Music</li>
                         <li>Support</li>
-                        <li className="searchIcon"><img src={SearchIcon}/> </li>
-                        <li className="cartIcon"><img src={CartIcon}/> </li>
+                        <li className="searchIcon" ><img src={SearchIcon}/> </li>
+                        <li className="cartIcon"><a href="#bagview-content:active" /><img src={CartIcon}/> </li>
                     </ul>
                 </div>
+                <div id="bagview-content">
+                                <p> Your Bag is empty. </p>
+                                    <ul>
+                                        <li> Bag </li>
+                                        <li> Favorites </li>
+                                        <li> Orders </li>
+                                        <li> Account </li>
+                                        <li> Sign in </li>
+                                    </ul>
+                                </div>
             </div>
         );
     }
