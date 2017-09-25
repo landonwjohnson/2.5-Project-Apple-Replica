@@ -16,32 +16,31 @@ body {
     z-index: 9999;
   }
 
-  .nav ul {
-    width: 100%;
+  .ac-gn-header ul {
+    padding-left: 0px;
   }
 
-  .appleIcon {
+  .nav ul {
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  .appleIcon img {
     height: 19px;
     width: 19px;
     display: flex;
-    justify-content: space-around;
-    align-items: auto;
   }
 
   .searchIcon {
     height: 16px;
     width: 19px;
     display: flex;
-    justify-content: space-around;
-    align-items: auto;
   }
 
   .cartIcon {
     height: 16px;
     width: 19px;
     display: flex;
-    justify-content: space-around;
-    align-items: auto;
   }
   .nav li{
     display: inline block;
@@ -56,8 +55,6 @@ body {
     align-items: auto;
     opacity: 1;
     outline-offset: -7px;
-   
-   
   }
   
   .nav li:hover{
@@ -72,8 +69,12 @@ body {
     position: relative;
     justify-content: space-around;
     align-items: center;
-    max-width: 1000px;
+    max-width: 990px;
     width: 100%;
+  }
+
+  .mobile-nav {
+    display: none;
   }
   /*shopping bag*/
   
@@ -157,6 +158,10 @@ body {
       height: 505px;
     }
 
+    .iPhone8Med {
+      display: none;
+    }
+
     .iPhone8Small {
       display: none;
     }
@@ -183,6 +188,10 @@ body {
       height: 207px;
       margin-top: 137px;
       margin-bottom: 137px;
+    }
+
+    .iPhone10XMed {
+      display: none;
     }
 
     .iPhone10XSmall {
@@ -495,7 +504,59 @@ body {
   }
 
 /* MEDIA */
+  @media only screen and (max-width: 1064px){
 
+    .headline1 {
+      display: block;
+      font-size: 44px;
+      line-height: 1.09091;
+      font-weight: 600;
+      letter-spacing: -.002em;
+      font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+     
+  }
+
+
+    .headline2 {
+      display: block;
+      font-size: 22px;
+      line-height: .00082;
+      font-weight: 400;
+      letter-spacing: .01em;
+      font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+   }
+
+
+
+    .nav ul {
+      padding-left: 0px;
+    }
+    .iPhone8Large {
+      display: none;
+    }
+
+    .iPhone8Med {
+      display: block;
+     
+    }
+
+    .iPhone10XLarge {
+      display: none;
+    }
+
+    .iPhone10XMed {
+      display: block;
+      padding-bottom: 172px;
+      padding-top: 140px;
+    }
+
+    .watchLarge {
+      display: none;
+    }
+    .watchMed {
+      display: block;
+    }
+  }
   @media only screen and (max-width: 735px) {
     .ac-gn-header {
       display: flex;
@@ -509,6 +570,8 @@ body {
       z-index: 9999;
     }
     /*nav*/
+
+
       .ac-gn-header {
         display: flex;
         justify-content: center;
@@ -520,31 +583,58 @@ body {
         z-index: 2;
       }
       .nav {
+        display: none;
+      }
+
+      .mobile-nav {
         display: flex;
         position: relative;
         justify-content: space-between;
         align-items: center;
         max-width: 735px;
         width: 100%;
+        list-style: none;
       }
+
+      .menuicon-bread {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 44px;
+        width: 44px;
+        color: white;
+      }
+
+      .mobile-nav .menuicon-bread-crust-top {
+        margin-top: 45%;
+        margin-bottom: 5px;
+        display: block;
+        height: 1px;
+        width: 17px;
+        background-color: white;
+      }
+
+      .mobile-nav {
+        padding-left: 0px;
+      }
+
+      .mobile-nav .menuicon-bread-crust-bottom {
         
-      .nav li {
-        display: none;
+        display: block;
+        height: 1px;
+        width: 17px;
+        background-color: white;
       }
 
-      .nav .searchIcon {
+      .mobile-nav .appleIcon {
         display: flex;
       }
 
-      .nav .appleIcon {
-        display: flex;
-      }
-
-      .nav .cartIcon {
-        display: flex;
-        padding-right: 15px;
-        height: 30px;
-        width: auto;
+      .mobile-nav .cartIcon {
+        display: block;
+        height: 24px;
+        padding-left: 14px;
+        
       }
     /*content*/
       /*content1*/
@@ -574,14 +664,16 @@ body {
 
         .iPhone8Large {
           display: none;
-          border-color: #F9F0EB;
-          width: 673px;
-          height: 505px;
+        }
+
+        .iPhone8Med {
+          display: none;
         }
         
         .iPhone8Small {
           display: block;
         }
+
       /*content2*/
         .content2 {
           display: flex;
@@ -598,6 +690,10 @@ body {
           cursor: pointer;
         }
         .iPhone10XLarge {
+          display: none;
+        }
+
+        .iPhone10XMed {
           display: none;
         }
         .iPhone10XSmall {
@@ -619,6 +715,10 @@ body {
           cursor: pointer;
         }
         .watchLarge{
+          display: none;
+        }
+
+        .watchMed {
           display: none;
         }
         .watchSmall {

@@ -1,15 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import iPhone8GoldLarge from '../img/iphone_8_largetall.jpg';
-import iPhone8GoldSmall from '../img/iphone_8_small.jpg'
+import iPhone8GoldMed from '../img/1064/iphone_8_mediumtall.jpg';
+import iPhone8GoldSmall from '../img/735/iphone_8_small.jpg'
 import iPhone10XLarge from '../img/iphone_x_largetall.jpg';
-import iPhone10XSmall from '../img/iphone_x_small.jpg';
+import iPhone10XMed from '../img/1064/iphone_x_mediumtall.jpg';
+import iPhone10XSmall from '../img/735/iphone_x_small.jpg';
 import watchTitleSVG from '../img/svg/watch_series_3_large.svg';
 import watchLarge from './../img/watch_largetall.jpg';
-import watchSmall from './../img/watch_small.jpg';
+import watchMed from './../img/1064/watch_mediumtall.jpg';
+import watchSmall from './../img/735/watch_small.jpg';
 import TVWonderWoman from './../img/tv_4k_large.jpg';
+import TVWonderWomanMed from './../img/1064/tv_4k_medium.jpg';
 import iOS11 from './../img/ios_large.jpg';
+import iOS11Med from './../img/1064/ios_medium.jpg';
 import watchOS4 from './../img/watchos_large.jpg';
+import watchOS4Med from './../img/1064/watchos_medium.jpg';
 import collegeDeal from './../img/bts_ipad_pro_large.jpg';
 import handINhand from './../img/hand_in_hand_logo_large.jpg';
 import appleTVlogo from './../img/tv_4k_logo_large.png';
@@ -23,6 +29,7 @@ export default class Content extends React.Component {
                     <h2 className="headline1"> iPhone 8 </h2>
                     <h3 className="headline2"> A new generation of iPhone </h3>
                     <img className="iPhone8Large" src={iPhone8GoldLarge} />
+                    <img className="iPhone8Med" src={iPhone8GoldMed} />
                     <img className="iPhone8Small" src={iPhone8GoldSmall} />
                 </div>
                 
@@ -30,6 +37,7 @@ export default class Content extends React.Component {
                     <h2 className="headline1"> iPhone X </h2>
                     <h3 className="headline2"> Say hello to the future </h3>
                     <img className="iPhone10XLarge" src={iPhone10XLarge} />
+                    <img className="iPhone10XMed"   src={iPhone10XMed} />
                     <img className="iPhone10XSmall" src={iPhone10XSmall} />
                 </div>
 
@@ -37,6 +45,7 @@ export default class Content extends React.Component {
                     <img className="watchSVG" src={watchTitleSVG} />
                     <h3 className="headline2"> Freedom calls </h3>
                     <img className="watchLarge" src={watchLarge} />
+                    <img className="watchMed"   src={watchMed} />
                     <img className="watchSmall" src={watchSmall} />
                 </div>
 
