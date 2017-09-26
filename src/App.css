@@ -66,7 +66,6 @@ body {
 
   .nav {
     display: flex;
-    position: relative;
     justify-content: space-around;
     align-items: center;
     max-width: 990px;
@@ -78,20 +77,33 @@ body {
   }
   /*shopping bag*/
   
+    .bag-wrapper{
+    position: absolute;
+    display: block;
+    max-width: 990px;
+    left: 68%;
+    }
+    .cart-menu-icons {
+      display: inline;
+      max-width: 15px;
+    }
+  
     .bagview-content{
       display: none;
-      float: right;
       max-width: 290px;
+      min-width: 200px;
+      width: 100%;
       min-height: 309px;
       height: 307px;
       z-index: 2;
       margin: 0 auto;
-      border-color: blue;
+      background-color: white;
       border: solid 1px;
-      position: absolute;
+      position: fixed;
       overflow: hidden;
       border-radius: 2px;
       border: 2px solid #d6d6d6;
+      margin-right: 24px;
     }
 
     .bagview-content--show {
@@ -117,11 +129,9 @@ body {
       color: #0070c9;
       padding: 0 30px;
       white-space: nowrap;
-      text-overflow: ellipsis;
+      
       overflow: hidden;
       border-top: 1px solid #e3e3e3;
-      margin-left: auto;
-      margin-right: auto;
     }
 /*CONTENT*/
 
@@ -336,11 +346,14 @@ body {
       border-width: 12px 6px 6px 12px;
       }
 
-    .iOS11Tile img {
+    .iOS11 {
       display: block;
       margin-right: auto;
       margin-left: auto;
       }      
+    .iOS11Med {
+      display: none;
+    }
    /*tile 3*/
     .watchOSTile {
       display: flex;
@@ -353,19 +366,24 @@ body {
       border-width: 12px 6px 6px 12px;
       }
 
-    .watchOSTile img {
+    .watchOS4 {
       display: block;
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 48px;
-      
     }
+
+    .watchOS4Med {
+      display: none
+    }
+      
+    
    /*tile 4*/
     .collegeTile {
       display: flex;
       justify-content: center;
       height: 587px;
-      width: 793px;
+      max-width: 793px;
       border: solid;
       border-color: #FFFFFF;
       border-width: 12px 6px 6px 12px;
@@ -560,6 +578,66 @@ body {
     .watchMed {
       display: block;
     }
+
+    .watchOS4 {
+      display: none;
+    }
+
+    .watchOS4Med {
+      display: block;
+    }
+
+    .iOS11 {
+      display: none;
+    }
+
+    .iOS11Med {
+      display: block;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    .iOS11Tile {
+      height: 490px;
+      width: 444px;
+      max-width: 444px;
+      max-height: 490px;
+    }
+
+    .watchOSTile {
+      height: 490px;
+      width: 444px;
+      max-width: 444px;
+      max-height: 490px;
+    }
+
+    .collegeTile {
+      display: flex;
+      justify-content: center;
+      height: 490px;
+      width: 444px;
+      max-width: 444px;
+      max-height: 490px;
+      border: solid;
+      border-color: #FFFFFF;
+      border-width: 12px 6px 6px 12px;
+      background-image: url("./img/bts_ipad_pro_large.jpg");
+      background-size: cover;
+      background-position-x: 50%; 
+      }
+
+    .tv4kTile {
+      border: solid;
+      border-color: white;
+      border-width: 12px 6px 6px 12px;
+      height: 490px;
+      width: 444px;
+      max-width: 444px;
+      max-height: 490px;
+      background-image: url('./img/1064/tv_4k_medium.jpg');
+    }
+
+
   }
   @media only screen and (max-width: 735px) {
     .ac-gn-header {
@@ -730,4 +808,32 @@ body {
         }
 
         
+  }
+  @media only screen and (max-width: 419px) {
+            /*shopping bag*/
+            .bag-wrapper{
+              position: absolute;
+              display: flex;
+              justify-content: center;
+            
+              }
+              .bagview-content{
+                display: none;
+                max-width: 419px;
+                min-width: 200px;
+                width: 100%;
+                min-height: 309px;
+                height: 307px;
+                z-index: 2;
+                margin: 0 auto;
+                background-color: white;
+                border: solid 1px;
+                position: fixed;
+                overflow: hidden;
+                border-radius: 2px;
+                border: 2px solid #d6d6d6;
+              }
+              .bagview-content--show {
+                display: block;
+              }
   }

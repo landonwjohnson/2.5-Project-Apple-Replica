@@ -68,7 +68,8 @@ export default class Content extends React.Component {
                                     <h5> Available now. </h5>
                                 </div>
                             </div>
-                            <img src={ iOS11 } />
+                            <img className="iOS11" src={ iOS11 } />
+                            <img className="iOS11Med"src={ iOS11Med }/>
                         </div>
                     </div>
                     <div className="watchOSTile">
@@ -79,7 +80,8 @@ export default class Content extends React.Component {
                                             <h5> Available now. </h5>
                                     </div>
                                 </div>
-                                <img src={watchOS4} />
+                                <img className="watchOS4" src={watchOS4} />
+                                <img className="watchOS4Med" src={watchOS4Med} />
                         </div>
                     </div>
                     <div className="collegeTile">
