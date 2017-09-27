@@ -26,27 +26,33 @@ export default class Content extends React.Component {
         return (
             <div className="content">
                 <div className="content1">
-                    <h2 className="headline1"> iPhone 8 </h2>
-                    <h3 className="headline2"> A new generation of iPhone </h3>
+                    <div className="unit-copy-wrapper">
+                        <h2 className="headline1"> iPhone 8 </h2>
+                        <h3 className="headline2"> A new generation of iPhone </h3>
+                    </div>
                     <img className="iPhone8Large" src={iPhone8GoldLarge} />
                     <img className="iPhone8Med" src={iPhone8GoldMed} />
                     <img className="iPhone8Small" src={iPhone8GoldSmall} />
                 </div>
                 
                 <div className="content2">
-                    <h2 className="headline1"> iPhone X </h2>
-                    <h3 className="headline2"> Say hello to the future </h3>
+                    <div className="unit-copy-wrapper">
+                        <h2 className="headline1"> iPhone X </h2>
+                        <h3 className="headline2"> Say hello to the future </h3>
+                    </div>
                     <img className="iPhone10XLarge" src={iPhone10XLarge} />
                     <img className="iPhone10XMed"   src={iPhone10XMed} />
                     <img className="iPhone10XSmall" src={iPhone10XSmall} />
                 </div>
 
                 <div className="content3">
-                    <img className="watchSVG" src={watchTitleSVG} />
-                    <h3 className="headline2"> Freedom calls </h3>
-                    <img className="watchLarge" src={watchLarge} />
-                    <img className="watchMed"   src={watchMed} />
-                    <img className="watchSmall" src={watchSmall} />
+                    <div className="unit-copy-wrapper">
+                        <img className="watchSVG" src={watchTitleSVG} />
+                        <h3 className="headline2"> Freedom calls </h3>
+                    </div>
+                        <img className="watchLarge" src={watchLarge} />
+                        <img className="watchMed"   src={watchMed} />
+                        <img className="watchSmall" src={watchSmall} />
                 </div>
 
                 <div className="tileContent">
@@ -61,7 +67,7 @@ export default class Content extends React.Component {
                         </div>
                     </div>
                     <div className="iOS11Tile">
-                        <div className="unit-copy-wrapper">
+                        <div className="unit-copy-wrapper-tile">
                             <div className="unit-header">
                                 <h4> iOS 11 </h4>
                                 <div className="sub-header">
@@ -73,7 +79,7 @@ export default class Content extends React.Component {
                         </div>
                     </div>
                     <div className="watchOSTile">
-                        <div className="unit-copy-wrapper">
+                        <div className="unit-copy-wrapper-tile">
                                 <div className="unit-header">
                                     <h4> watchOS 4 </h4>
                                     <div className="sub-header">
@@ -85,14 +91,12 @@ export default class Content extends React.Component {
                         </div>
                     </div>
                     <div className="collegeTile">
-                        <div className="unit-copy-wrapper">
+                        <div className="unit-copy-wrapper-tile">
                             <div className="unit-header">
                                 <h4> Last Chance. </h4>
                                 <div className="sub-header">
-                                    <h5> Buy iPad Pro for college.
-                                    <br/>
-                                    Get Beats.
-                                    </h5>
+                                    <h5> Buy iPad Pro for college.</h5>
+                                    <h5> Get Beats.</h5>
                                 </div>
                                 
                             </div>

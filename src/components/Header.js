@@ -40,6 +40,7 @@ export default class Header extends React.Component {
             <div>
                 <div className="ac-gn-header">
                     <ul className="nav">
+                        <li className ="menuicon-bread"> <span className = "menuicon-bread-crust-top"/> <span className = "menuicon-bread-crust-bottom"/> </li>
                         <li className="appleIcon"><img src={AppleIcon}/></li>
                         <li>Mac</li>
                         <li>iPad</li>
@@ -51,11 +52,7 @@ export default class Header extends React.Component {
                         <li className="searchIcon" ><img src={SearchIcon} /> </li>
                         <li className="cartIcon" onClick={this.handleCartClick} ><img src={CartIcon} /> </li>
                     </ul>
-                    <ul className="mobile-nav">
-                        <li className ="menuicon-bread"> <span className = "menuicon-bread-crust-top"/> <span className = "menuicon-bread-crust-bottom"/> </li>
-                        <li className="appleIcon"><img src={AppleIcon}/></li>
-                        <li className="cartIcon" onClick={this.handleCartClick}><img src={CartIcon}/></li>
-                    </ul>  
+                    
                 </div>
                 <div className="bag-wrapper">
              
@@ -71,6 +68,15 @@ export default class Header extends React.Component {
                 </div>
                
                 </div>
+                <ul className="mobile-nav">
+                        <li>Mac</li>
+                        <li>iPad</li>
+                        <li>iPhone</li>
+                        <li>Watch</li>
+                        <li>TV</li>
+                        <li>Music</li>
+                        <li>Support</li>
+                    </ul>  
                     
             </div>
         );
