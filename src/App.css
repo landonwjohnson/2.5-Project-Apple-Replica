@@ -14,9 +14,10 @@ body {
     margin-top: -44px;
     align-items: center;
     background: rgba(0,0,0,0.8);
-    z-index: 9999;
+    z-index: 1;
+    
+    
   }
-
   .ac-gn-header ul {
     padding-left: 0px;
   }
@@ -55,7 +56,6 @@ body {
     justify-content: space-around;
     align-items: auto;
     opacity: 1;
-    outline-offset: -7px;
   }
   
   .nav li:hover{
@@ -71,19 +71,64 @@ body {
     align-items: center;
     max-width: 990px;
     width: 100%;
+    margin: 0px;
+    z-index: 1;
+    position: absolute;
   }
 
   .mobile-nav {
     display: none;
-    width: 100%;
     height: 100%;
-    max-height: 739px;
     background-color: black;
-    position: absolute;
+    position: fixed;
+    z-index: 2;
+    padding-right: 48px; 
+    padding-left: 48px;
+    right: 0;
+    left: 0;
+    
+    
   }
 
-  .mobile-nav li {
+  .mobile-nav{
+    
+  }
+
+  .m-nav-list  {
     color: white;
+    margin-top: 20px;
+    border-bottom: 1px solid #333;
+    z-index: 1;
+    opacity: 1;
+    white-space: nowrap;
+    font-weight: 400;
+    height: 33px;
+    
+    
+     
+    
+  }
+
+  .m-nav-list li {
+    display: block;
+    line-height: 2.52947;
+    letter-spacing: -.021em;
+    font-size: 17px;
+    text-decoration: none;
+    transform: scale(1.1) translateY(24px);
+  }
+
+ 
+  
+  .mobile-nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+
+
+  .mobile-nav--show {
+    display: block;
   }
   /*shopping bag*/
   
@@ -101,9 +146,8 @@ body {
     .bagview-content{
       display: none;
       max-width: 290px;
-      min-width: 200px;
       width: 100%;
-      min-height: 309px;
+      
       height: 307px;
       z-index: 2;
       margin: 0 auto;
@@ -178,17 +222,17 @@ body {
       flex-direction: column;
       justify-content: flex-end;
       align-items: center;
-      height: 100%;
       width: 100%;
       background-color: #F9F0EB;
       overflow: visible;
       flex-grow: 1;
-      z-index: 1;
       cursor: pointer;
+      z-index: 0;
     }
 
     .iPhone8Large {
-      width: 673px;
+      max-width: 673px;
+      width: 100%;
       height: 505px;
     }
 
@@ -252,7 +296,6 @@ body {
       height: 100%;
       max-width: 187px;
       width: 100%;
-      min-width: 100px;
 
 
     }
@@ -305,7 +348,6 @@ body {
 
     .sub-header h5 {
       width: 88%;
-      max-width: 550px;
       height: 28px;
       font-weight: 400;
       line-height: 1.16667;
@@ -330,11 +372,14 @@ body {
       width: 100%;
       max-width: 793px;
       background-image: url('./img/tv_4k_large.jpg');
+      background-position-x: 50%;
+      background-position-y: 50%;
       }
 
     .tv4kTile .sub-header h5 {
       color: white;
       font-size: 24px;
+      width: 88%;
       line-height: 1.16667;
       font-weight: 400;
       letter-spacing: .009em;
@@ -344,7 +389,8 @@ body {
 
     .unit-header img {
       text-align: center;
-      max-width: 550px;
+      max-width: 109px;
+      width: 100%;
       margin-top: 1.33em;
       margin-bottom: 0px; 
       margin-right: auto;
@@ -365,7 +411,7 @@ body {
       background-color: #FAFAFA;
       height: 587px;
       max-width: 793px;
-      min-width: 462px;
+      
       border: solid;
       border-color: #FFFFFF;
       border-width: 12px 6px 6px 12px;
@@ -414,11 +460,12 @@ body {
       border-width: 12px 6px 6px 12px;
       background-image: url("./img/bts_ipad_pro_large.jpg");
       background-size: cover;
-      background-position-x: 50%; 
+      background-position-x: 50%;
+      background-position-y: 50%;
       }
-      .collegeTile h5 {
-        margin-bottom: -0.4em;
-        }
+    .collegeTile h5 {
+      margin-bottom: -0.4em;
+      }
       
 
   /*donate*/
@@ -583,7 +630,7 @@ body {
         position: relative;
       }
       .unit-copy-wrapper-tile {
-        width: 688px;
+        width: 100%;
         height: 136.36px;
         text-align: center;
       }
@@ -595,8 +642,7 @@ body {
         height: 52px;
         margin-top: 1.08em;
         margin-bottom: 0px; 
-        margin-right: auto;
-        margin-left: auto;
+       
         text-align: center;
         letter-spacing: 0em;
         font-weight: 600;
@@ -610,7 +656,7 @@ body {
   
       .sub-header h5 {
         width: 88%;
-        max-width: 550px;
+        
         height: 28px;
         font-weight: 400;
         line-height: 0.19048;
@@ -620,8 +666,7 @@ body {
         display: block;
         position: relative;
       
-        margin-left: auto;
-        margin-right: auto;
+        
         text-align: center;
         flex-shrink: 1;
         font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
@@ -701,12 +746,17 @@ body {
 
       .watchOS4Med {
         display: block;
+        position: relative;
+        left: 6%;
+        width: 100%;
       }
+
       .watchOSTile {
         height: 490px;
         width: 100%;
         max-width: 490px;
         max-height: 490px;
+        overflow: hidden;
       }
     
     /*ios11 tile 1064*/
@@ -715,8 +765,7 @@ body {
       }
       .iOS11Med {
         display: block;
-        margin-left: 20px;
-        margin-right: 20px;
+        width: 100%;
       }
 
       .iOS11Tile {
@@ -745,6 +794,62 @@ body {
 
 
 
+
+  }
+  @media only screen and (max-width: 912px) {
+    .bag-wrapper{
+      display: block;
+      width: 100%;
+      max-width: 912px;
+      left: 0;
+      right: 0;
+      }
+      .cart-menu-icons {
+        display: inline;
+        max-width: 15px;
+      }
+    
+      .bagview-content{
+        display: none;
+        z-index: 2;
+        background-color: white;
+        border: solid 1px;
+        position: fixed;
+        border-radius: 2px;
+        border: 2px solid #d6d6d6;
+        margin: 0px;
+        width: 100%;
+        max-width: 912px;
+        
+      }
+  
+      .bagview-content--show {
+        display: block;
+        width: 100%;
+      }
+  
+      .bagview-content p {
+        text-align: center;
+        color: #888;
+        display: block;
+      }
+  
+      .bagview-content ul {
+        display: block;
+        width: 100%;
+        padding: 0px;
+      }
+  
+      .bagview-content li {
+        display: block;
+        text-decoration: none;
+        line-height: 43px;
+        width: 100%;
+        color: #0070c9;
+        padding: 0px 30px;
+        
+        border-top: 1px solid #e3e3e3;
+      }
 
   }
   @media only screen and (max-width: 735px) {
@@ -852,7 +957,6 @@ body {
 
       .nav {
         width: 100%;
-        max-width: 735px;
       }
       .nav li {
         display: none;
@@ -993,8 +1097,6 @@ body {
           background-image: url('./img/tv_4k_large.jpg');
         }
 
-        
-
         .iOS11Tile .iOS11 {
           display: none;
         }
@@ -1007,9 +1109,15 @@ body {
         .watchOSTile .watchOS4 {
           display: none;
         }
+        
+  
+  
         .watchOSTile {
           height: 500px;
           width: 100%;
+          max-width: 490px;
+          max-height: 490px;
+          overflow: hidden;
           border: none;
         }
 
@@ -1034,5 +1142,7 @@ body {
         display: none;
       }
 
+
+      
   
   }
