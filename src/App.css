@@ -1,5 +1,6 @@
 body {
   user-select: none;
+  width: 100%;
 }
 
 
@@ -755,7 +756,7 @@ body {
       font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
       margin: 0px;
      
-   }
+    }
     .headline2 {
       font-size: 19px;
       line-height: 1.42115;
@@ -988,60 +989,50 @@ body {
         .tv4kTile {
           height: 500px;
           width: 100%;
-          max-width: 735px;
-          max-height: 500px;
-          border-color: none;
+          border: none; 
           background-image: url('./img/tv_4k_large.jpg');
         }
 
+        
+
+        .iOS11Tile .iOS11 {
+          display: none;
+        }
         .iOS11Tile {
           height: 500px;
           width: 100%;
-          max-width: 735px;
-          max-height: 500px;
-          border-color: none;
+          border: none;
         }
 
+        .watchOSTile .watchOS4 {
+          display: none;
+        }
         .watchOSTile {
           height: 500px;
           width: 100%;
-          max-width: 735px;
-          max-height: 500px;
+          border: none;
         }
 
         .collegeTile {
           height: 500px;
           width: 100%;
-          max-width: 735px;
-          max-height: 500px;
+          border: none;
         }
         
   }
-  @media only screen and (max-width: 419px) {
-            /*shopping bag*/
-            .bag-wrapper{
-              position: absolute;
-              display: flex;
-              justify-content: center;
-            
-              }
-              .bagview-content{
-                display: none;
-                max-width: 419px;
-                min-width: 200px;
-                width: 100%;
-                min-height: 309px;
-                height: 307px;
-                z-index: 2;
-                margin: 0 auto;
-                background-color: white;
-                border: solid 1px;
-                position: fixed;
-                overflow: hidden;
-                border-radius: 2px;
-                border: 2px solid #d6d6d6;
-              }
-              .bagview-content--show {
-                display: block;
-              }
+  @media only screen and (max-width: 320px) {
+      .iOS11Tile .iOS11 {
+        display: none;
+      }
+    
+    
+      .iOS11Tile .iOS11 {
+        display: none;
+      }
+
+      .watchOSTile .watchOS4 {
+        display: none;
+      }
+
+  
   }
