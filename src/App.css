@@ -15,9 +15,9 @@ body {
     align-items: center;
     background: rgba(0,0,0,0.8);
     z-index: 1;
-    
-    
   }
+
+
   .ac-gn-header ul {
     padding-left: 0px;
   }
@@ -25,6 +25,7 @@ body {
   .nav ul {
     width: 100%;
     padding-left: 0px;
+    
   }
 
   .appleIcon img {
@@ -33,11 +34,55 @@ body {
     display: flex;
   }
 
-  .searchIcon {
-    height: 16px;
-    width: 19px;
-    display: flex;
-  }
+  /* search bar */
+      .close-search {
+        display: block;
+        background-color: blue;
+        height: 30px;
+        width: 30px;
+      }
+
+      .searchform-wrapper {
+        display: none !important;
+        width: 100%;
+        background-color: black;
+        z-index: 5;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        height: 44px;
+        animation: 
+        searchbar 1s;
+      }
+
+      .searchform-wrapper--show {
+        display: flex !important;
+      }
+
+      .searchIcon {
+        display: flex;
+        height: 16px;
+        width: 19px;
+      }
+
+      .searchform-icon {
+        height: 16px;
+        width: 19px;
+        padding-right: 15px;
+      }
+
+      .searchform-input {
+      
+        font-size: 17px;
+        color: white;
+        height: 1.29412em;
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        max-width: 642px;
+      }
 
   .cartIcon {
     height: 16px;
@@ -80,19 +125,40 @@ body {
     display: none;
     height: 100%;
     background-color: black;
-    position: fixed;
-    z-index: 2;
+    position: absolute;
+    z-index: 1;
     padding-right: 48px; 
     padding-left: 48px;
     right: 0;
     left: 0;
-    
-    
+    animation: 
+      mobilenav 1s,
+      forwards 1s;
   }
 
-  .mobile-nav{
-    
+  @keyframes mobilenav {
+    0%{
+      opacity: 0;
+      height: 0%;
+    }
+    100% {
+      opacity: 1;
+      height: 100%;
+    }
   }
+
+  @keyframes searchbar {
+    0%{
+      opacity: 0;
+      
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+
+  
 
   .m-nav-list  {
     color: white;
@@ -123,6 +189,7 @@ body {
   .mobile-nav ul {
     list-style-type: none;
     padding: 0;
+    
   }
 
 
@@ -492,10 +559,13 @@ body {
 
 
 /*FOOTER*/
+  .footerList-mobile {
+    display: none;
+  }
   .footer {
     padding-right: 20%;
     padding-left: 20%;
-    height: 381px;
+    
     background-color: #F2F2F2;
     display: flex;
     justify-content: space-between;
@@ -957,6 +1027,7 @@ body {
 
       .nav {
         width: 100%;
+        position: fixed;
       }
       .nav li {
         display: none;
@@ -993,6 +1064,7 @@ body {
 
       .nav .appleIcon {
         display: flex;
+        
       }
 
       .nav .cartIcon {
@@ -1126,6 +1198,51 @@ body {
           width: 100%;
           border: none;
         }
+    /* MOBILE FOOTER */
+      .footer {
+        display: block;
+        background-color: #f2f2f2;
+        padding: 0px;
+        margin: 0px;
+        padding-left: 16px;
+        padding-right: 16px;
+        text-decoration: none;
+      }
+
+      footer h4 {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .footerList-mobile {
+        display: block;
+        width: 100%;
+        
+        border-bottom: #D6D6D6 solid 1px;
+
+      }
+
+    .column-title{
+        font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","Helvetica Neue","Helvetica","Arial",sans-serif;
+        line-height: 2.5;
+        font-weight: 400;
+        letter-spacing: 0em;
+        padding-top: 10px;
+        padding-bottom: 10px; 
+    }
+
+      .footerList-mobile li {
+        padding: 6px 14px 6px 14px;
+        text-decoration: none;
+        display: none;
+        
+        
+      }
+
+    
+      .footerList{
+        display: none;
+      }
         
   }
   @media only screen and (max-width: 320px) {

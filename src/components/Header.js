@@ -18,10 +18,12 @@ export default class Header extends React.Component {
         super();
         this.state ={
             cartMenuOpen: false,
-            mobileNavOpen: false
+            mobileNavOpen: false,
+            searchOpen: false,
         }
         this.handleCartClick = this.handleCartClick.bind(this);
         this.handleMobileNavClick = this.handleMobileNavClick.bind(this);
+        this.handleSearchClick = this.handleSearchClick.bind(this);
     }
     handleCartClick(){
         console.log('Hi');
@@ -44,6 +46,20 @@ export default class Header extends React.Component {
             this.setState({mobileNavOpen: true})
         }
     }
+
+    handleSearchClick(){
+        console.log('search click test')
+        this.setState({cartMenuOpen: false})
+        
+        if(this.state.searchOpen) {
+            this.setState({searchOpen: false})
+        }
+        else {
+            this.setState({searchOpen: true})
+        }
+    }
+
+    
     render() {
         var bagClasses = classnames({
             "bagview-content--show": this.state.cartMenuOpen,
@@ -54,9 +70,15 @@ export default class Header extends React.Component {
             "mobile-nav--show": this.state.mobileNavOpen,
             "mobile-nav": true
         })
+
+        var searchClasses = classnames({
+            "searchform-wrapper--show": this.state.searchOpen,
+            "searchform-wrapper": true
+        })
         return (
             <div>
                 <div className="ac-gn-header">
+                    
                     <ul className="nav">
                         <li className ="menuicon-bread" onClick={this.handleMobileNavClick}> <span className = "menuicon-bread-crust-top"/> <span className = "menuicon-bread-crust-bottom"/> </li>
                         <li className="appleIcon"><img src={AppleIcon}/></li>
@@ -67,10 +89,12 @@ export default class Header extends React.Component {
                         <li>TV</li>
                         <li>Music</li>
                         <li>Support</li>
-                        <li className="searchIcon" ><img src={SearchIcon} /> </li>
+                        <li className="searchIcon" onClick={this.handleSearchClick}><img src={SearchIcon} /></li>
                         <li className="cartIcon" onClick={this.handleCartClick} ><img src={CartIcon} /> </li>
                     </ul>
-                    
+                    <div className={searchClasses} >
+                        <img className="searchform-icon" src={SearchIcon}/><input className="searchform-input" placeholder="Search apple.com" /><span className="close-search" onClick={this.handleSearchClick}/>
+                    </div> 
                 </div>
                 <div className="bag-wrapper">
              
