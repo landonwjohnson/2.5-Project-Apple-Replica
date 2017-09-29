@@ -125,7 +125,7 @@ body {
     display: none;
     height: 100%;
     background-color: black;
-    position: absolute;
+    position: fixed;
     z-index: 1;
     padding-right: 48px; 
     padding-left: 48px;
