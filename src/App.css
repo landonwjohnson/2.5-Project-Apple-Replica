@@ -196,6 +196,7 @@ body {
 
   .mobile-nav--show {
     display: block;
+    position: fixed;
   }
   /*shopping bag*/
   
