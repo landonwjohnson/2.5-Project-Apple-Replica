@@ -102,6 +102,14 @@ body {
     align-items: auto;
     opacity: 1;
   }
+
+  .MenuItem--show {
+    visibility: hidden !important;
+  }
+
+  .nav .MenuItem li  {
+    visibility: hidden !important;
+  }
   
   .nav li:hover{
     color: #C2C1C1;

@@ -20,10 +20,13 @@ export default class Header extends React.Component {
             cartMenuOpen: false,
             mobileNavOpen: false,
             searchOpen: false,
+            navLinkShow: false,
         }
         this.handleCartClick = this.handleCartClick.bind(this);
         this.handleMobileNavClick = this.handleMobileNavClick.bind(this);
         this.handleSearchClick = this.handleSearchClick.bind(this);
+        this.handleNavLink = this.handleNavLink.bind(this);
+
     }
     handleCartClick(){
         console.log('Hi');
@@ -50,12 +53,21 @@ export default class Header extends React.Component {
     handleSearchClick(){
         console.log('search click test')
         this.setState({cartMenuOpen: false})
+        this.setState({navLinkShow: false})
         
         if(this.state.searchOpen) {
             this.setState({searchOpen: false})
         }
         else {
             this.setState({searchOpen: true})
+        }
+    }
+
+    handleNavLink(){
+        if(this.state.navLinkShow) {
+            this.setState({navLinkShow: true})
+        }
+        else{ this.setState({navLinkShow: false})
         }
     }
 
@@ -75,6 +87,11 @@ export default class Header extends React.Component {
             "searchform-wrapper--show": this.state.searchOpen,
             "searchform-wrapper": true
         })
+
+        var navLink = classnames({
+            "MenuItem--show": this.state.navLinkShow,
+            "MenuItem": false
+        })
         return (
             <div>
                 <div className="ac-gn-header">
@@ -82,15 +99,15 @@ export default class Header extends React.Component {
                     <ul className="nav">
                         <li className ="menuicon-bread" onClick={this.handleMobileNavClick}> <span className = "menuicon-bread-crust-top"/> <span className = "menuicon-bread-crust-bottom"/> </li>
                         <li className="appleIcon"><img src={AppleIcon}/></li>
-                        <li>Mac</li>
-                        <li>iPad</li>
-                        <li>iPhone</li>
-                        <li>Watch</li>
-                        <li>TV</li>
-                        <li>Music</li>
-                        <li>Support</li>
-                        <li className="searchIcon" onClick={this.handleSearchClick}><img src={SearchIcon} /></li>
-                        <li className="cartIcon" onClick={this.handleCartClick} ><img src={CartIcon} /> </li>
+                        <li className={navLink}>Mac</li>
+                        <li className={navLink}>iPad</li>
+                        <li className={navLink}>iPhone</li>
+                        <li className={navLink}>Watch</li>
+                        <li className={navLink}>TV</li>
+                        <li className={navLink}>Music</li>
+                        <li className={navLink}>Support</li>
+                        <li className={navLink} onClick={this.handleSearchClick}><img className="searchIcon" src={SearchIcon} /></li>
+                        <li onClick={this.handleCartClick} ><img className="cartIcon" src={CartIcon} /> </li>
                     </ul>
                     <div className={searchClasses} >
                         <img className="searchform-icon" src={SearchIcon}/><input className="searchform-input" placeholder="Search apple.com" /><span className="close-search" onClick={this.handleSearchClick}/>
