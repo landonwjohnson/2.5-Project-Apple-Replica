@@ -53,21 +53,24 @@ export default class Header extends React.Component {
     handleSearchClick(){
         console.log('search click test')
         this.setState({cartMenuOpen: false})
-        this.setState({navLinkShow: false})
         
         if(this.state.searchOpen) {
             this.setState({searchOpen: false})
+            this.setState({navLinkShow: false})
         }
         else {
             this.setState({searchOpen: true})
+            this.setState({navLinkShow: true})
+            
+            
         }
     }
 
     handleNavLink(){
         if(this.state.navLinkShow) {
-            this.setState({navLinkShow: true})
+            this.setState({navLinkShow: false})
         }
-        else{ this.setState({navLinkShow: false})
+        else{ this.setState({navLinkShow: true})
         }
     }
 
@@ -89,7 +92,7 @@ export default class Header extends React.Component {
         })
 
         var navLink = classnames({
-            "MenuItem--show": this.state.navLinkShow,
+            "MenuItem--hide": this.state.navLinkShow,
             "MenuItem": false
         })
         return (
@@ -99,6 +102,9 @@ export default class Header extends React.Component {
                     <ul className="nav">
                         <li className ="menuicon-bread" onClick={this.handleMobileNavClick}> <span className = "menuicon-bread-crust-top"/> <span className = "menuicon-bread-crust-bottom"/> </li>
                         <li className="appleIcon"><img src={AppleIcon}/></li>
+                        <div className={searchClasses} >
+                        <img className="searchform-icon" src={SearchIcon}/><input className="searchform-input" placeholder="Search apple.com" /><span className="close-search" onClick={this.handleSearchClick}/>
+                        </div> 
                         <li className={navLink}>Mac</li>
                         <li className={navLink}>iPad</li>
                         <li className={navLink}>iPhone</li>
@@ -107,11 +113,9 @@ export default class Header extends React.Component {
                         <li className={navLink}>Music</li>
                         <li className={navLink}>Support</li>
                         <li className={navLink} onClick={this.handleSearchClick}><img className="searchIcon" src={SearchIcon} /></li>
-                        <li onClick={this.handleCartClick} ><img className="cartIcon" src={CartIcon} /> </li>
+                        <li className="cartIcon" onClick={this.handleCartClick} ><img src={CartIcon} /> </li>
                     </ul>
-                    <div className={searchClasses} >
-                        <img className="searchform-icon" src={SearchIcon}/><input className="searchform-input" placeholder="Search apple.com" /><span className="close-search" onClick={this.handleSearchClick}/>
-                    </div> 
+                    
                 </div>
                 <div className="bag-wrapper">
              
