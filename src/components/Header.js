@@ -21,12 +21,12 @@ export default class Header extends React.Component {
             mobileNavOpen: false,
             searchOpen: false,
             navLinkShow: false,
+            isHeaderBlack: false,
         }
         this.handleCartClick = this.handleCartClick.bind(this);
         this.handleMobileNavClick = this.handleMobileNavClick.bind(this);
         this.handleSearchClick = this.handleSearchClick.bind(this);
-        this.handleNavLink = this.handleNavLink.bind(this);
-
+      
     }
     handleCartClick(){
         console.log('Hi');
@@ -44,9 +44,11 @@ export default class Header extends React.Component {
         this.setState({cartMenuOpen: false})
         if(this.state.mobileNavOpen){
             this.setState({mobileNavOpen: false})
+            this.setState({isHeaderBlack: false})
         }
         else {
             this.setState({mobileNavOpen: true})
+            this.setState({isHeaderBlack: true})
         }
     }
 
@@ -55,24 +57,17 @@ export default class Header extends React.Component {
         this.setState({cartMenuOpen: false})
         
         if(this.state.searchOpen) {
+            this.setState({isHeaderBlack: false})
             this.setState({searchOpen: false})
             this.setState({navLinkShow: false})
         }
         else {
             this.setState({searchOpen: true})
             this.setState({navLinkShow: true})
-            
-            
+            this.setState({isHeaderBlack: true})
         }
     }
 
-    handleNavLink(){
-        if(this.state.navLinkShow) {
-            this.setState({navLinkShow: false})
-        }
-        else{ this.setState({navLinkShow: true})
-        }
-    }
 
     
     render() {
@@ -95,9 +90,14 @@ export default class Header extends React.Component {
             "MenuItem--hide": this.state.navLinkShow,
             "MenuItem": false
         })
+
+        var headerColor = classnames({
+            "ac-gn-header--black": this.state.isHeaderBlack,
+            "ac-gn-header": true
+        })
         return (
             <div>
-                <div className="ac-gn-header">
+                <div className={headerColor}>
                     
                     <ul className="nav">
                         <li className ="menuicon-bread" onClick={this.handleMobileNavClick}> <span className = "menuicon-bread-crust-top"/> <span className = "menuicon-bread-crust-bottom"/> </li>
