@@ -40,18 +40,21 @@ body {
         background-color: blue;
         height: 30px;
         width: 30px;
+        position: relative;
+        right: 30px;
       }
 
       .searchform-wrapper {
         display: none !important;
         width: 100%;
-        background-color: black;
+        background-color: transparent;
         z-index: 5;
         justify-content: center;
         display: flex;
         align-items: center;
-        position: fixed;
+        position: absolute;
         height: 44px;
+        max-width: 990px;
         animation: 
         searchbar 1s;
       }
@@ -67,13 +70,16 @@ body {
       }
 
       .searchform-icon {
+        display: block;
+        position: relative;
         height: 16px;
         width: 19px;
-        padding-right: 15px;
+        left: 18%;
       }
 
       .searchform-input {
-      
+        display: block;
+        position: relative;
         font-size: 17px;
         color: white;
         height: 1.29412em;
@@ -81,7 +87,8 @@ body {
         background-color: transparent;
         border: none;
         outline: none;
-        max-width: 642px;
+        left: 19%
+        
       }
 
   .cartIcon {
@@ -103,12 +110,12 @@ body {
     opacity: 1;
   }
 
-  .MenuItem--show {
+  .MenuItem--hide  {
     visibility: hidden !important;
   }
 
-  .nav .MenuItem li  {
-    visibility: hidden !important;
+  .MenuItem  {
+    visibility: initial !important;
   }
   
   .nav li:hover{
@@ -1021,7 +1028,9 @@ body {
     }
 
     /*nav 735*/
-
+      .searchform-wrapper--show {
+        display: none !important;
+      }
 
       .ac-gn-header {
         display: flex;
@@ -1064,7 +1073,6 @@ body {
       
 
       .nav .menuicon-bread-crust-bottom {
-        
         display: block;
         height: 1px;
         width: 17px;
@@ -1080,7 +1088,6 @@ body {
         display: block;
         height: 24px;
         padding-left: 14px;
-        
       }
     /*content 735*/
       /*content1 735*/
