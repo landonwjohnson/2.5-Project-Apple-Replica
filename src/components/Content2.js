@@ -28,20 +28,6 @@ export default class Content2 extends React.Component {
                 </div>
                 <div className="LargeiMac"><img src={LargeiMac} /> </div>
             </div>
-            <div className="product-section3 theme-light">
-                <div className="titleContainer">
-                        <h2 className="product-headline">MacBook Pro</h2>
-                        <h2 className="typography-headline"> A touch of genius </h2>
-                        <div className="LargeMacBookPro"><img src={LargeMacBookPro} /> </div>
-                </div>
-            </div>
-            <div className="product-section3 theme-light">
-                <div className="titleContainer">
-                        <h2 className="product-headline">MacBook</h2>
-                        <h2 className="typography-headline"> Light. Years ahead </h2>
-                </div>
-                
-            </div>
             </div>
         );
     }

@@ -10,6 +10,9 @@ import FavIcon from '../img/svg/cart-menu/favorites-icon.svg';
 import OrdersIcon from '../img/svg/cart-menu/orders-icon.svg';
 import AccountIcon from '../img/svg/cart-menu/account-icon.svg';
 import SignInIcon from '../img/svg/cart-menu/sign-in-icon.svg';
+import { Link, Route } from 'react-router-dom';
+import Content1 from './Content1';
+import Content2 from './Content2';
 
 
 export default class Header extends React.Component {
@@ -102,11 +105,11 @@ export default class Header extends React.Component {
                     
                     <ul className="nav">
                         <li className ="menuicon-bread" onClick={this.handleMobileNavClick}> <span className = "menuicon-bread-crust-top"/> <span className = "menuicon-bread-crust-bottom"/> </li>
-                        <li className="appleIcon"><img src={AppleIcon}/></li>
+                        <li className="appleIcon"><Link to="/"><img src={AppleIcon}/> </Link></li>
                         <div className={searchClasses} >
                         <img className="searchform-icon" src={SearchIcon}/><input className="searchform-input" placeholder="Search apple.com" /><span className="close-search" onClick={this.handleSearchClick}/>
                         </div> 
-                        <li className={navLink}>Mac</li>
+                        <li className={navLink}><Link to="/Mac"> Mac</Link></li>
                         <li className={navLink}>iPad</li>
                         <li className={navLink}>iPhone</li>
                         <li className={navLink}>Watch</li>
@@ -134,7 +137,7 @@ export default class Header extends React.Component {
                 </div>
                 <div className={mobileNavClasses}>
                     <ul>
-                        <li className="m-nav-list">Mac</li>
+                        <li className="m-nav-list"><Link to="/Mac">Mac</Link></li>
                         <li className="m-nav-list">iPad</li>
                         <li className="m-nav-list">iPhone</li>
                         <li className="m-nav-list">Watch</li>
@@ -143,7 +146,7 @@ export default class Header extends React.Component {
                         <li className="m-nav-list">Support</li>
                     </ul>  
                 </div>
-                    
+           
             </div>
         );
     }
