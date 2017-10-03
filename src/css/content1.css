@@ -1,0 +1,703 @@
+  .headline1{
+    font-size: 56px;
+    line-height: 1.07143;
+    font-weight: 600;
+    letter-spacing: -.005em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin: 0px;
+   
+  }
+  .headline2 {
+    font-size: 27px;
+    line-height: 1.14815;
+    font-weight: 400;
+    letter-spacing: .008em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin-top: 6px;
+  }
+
+  .unit-copy-wrapper {
+    padding-top: 56px;
+    text-align: center;
+    display: block;
+  }
+  /*content 1*/
+
+    .content1 {
+      margin-top: 44px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      width: 100%;
+      background-color: #F9F0EB;
+      overflow: visible;
+      flex-grow: 1;
+      cursor: pointer;
+      z-index: 0;
+    }
+
+    .iPhone8Large {
+      max-width: 673px;
+      width: 100%;
+      height: 505px;
+    }
+
+    .iPhone8Med {
+      display: none;
+    }
+
+    .iPhone8Small {
+      display: none;
+    }
+
+  /*content 2*/
+
+    .content2 {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width: 100%;
+      background-color: #FAFAFA;
+      justify-content: flex-end;
+      align-items: center;
+      border-top-color: white;
+      border-bottom-color: white;
+      border-top: solid;
+      border-color: white;
+      cursor: pointer;
+     }
+
+    .iPhone10XLarge {
+      width: 981px;
+      height: 207px;
+      margin-top: 137px;
+      margin-bottom: 137px;
+    }
+
+    .iPhone10XMed {
+      display: none;
+    }
+
+    .iPhone10XSmall {
+      display: none;
+    }
+  /*content 3*/
+
+
+
+    .content3 {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      background-color: #FAFAFA;
+      justify-content: flex-start;
+      align-items: center;
+      border-top: solid;
+      border-color: white;
+      cursor: pointer;
+    }
+
+    .content3 .watchSVG {
+      max-height: 72px;
+      height: 100%;
+      max-width: 187px;
+      width: 100%;
+
+
+    }
+
+    .watchLarge {
+      width: 977px;
+      height: 434px;
+    }
+    .watchMed {
+      display: none;
+    }
+    .watchSmall {
+      display: none;
+    }
+  /*tile content*/
+
+    .tileContent {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      cursor: pointer;
+    }
+
+
+    .unit-copy-wrapper-tile {
+      width: 688px;
+      height: 136.36px;
+    }
+
+    .unit-header h4 {
+      text-align: center;
+      width: 88%;
+      max-width: 550px;
+      height: 52px;
+      margin-top: 1.08em;
+      margin-bottom: 0px; 
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
+      letter-spacing: -.003em;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 1.08365;
+      display: block;
+      position: relative;
+      font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+ 
+    }
+
+    .sub-header h5 {
+      width: 88%;
+      height: 28px;
+      font-weight: 400;
+      line-height: 1.16667;
+      font-size: 24px;
+      letter-spacing: .009;
+      text-align: center;
+      display: block;
+      position: relative;
+      margin-top: 0.4em;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    }
+   /*tile 1*/
+
+    .tv4kTile {
+      border: solid;
+      border-color: white;
+      border-width: 12px 6px 6px 12px;
+      height: 587px;
+      width: 100%;
+      max-width: 793px;
+      background-image: url('../img/tv_4k_large.jpg');
+      background-position-x: 50%;
+      background-position-y: 50%;
+      }
+
+    .tv4kTile .sub-header h5 {
+      color: white;
+      font-size: 24px;
+      width: 88%;
+      line-height: 1.16667;
+      font-weight: 400;
+      letter-spacing: .009em;
+      font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+      margin-top: 0.8em;
+    }
+
+    .unit-header img {
+      text-align: center;
+      max-width: 109px;
+      width: 100%;
+      margin-top: 1.33em;
+      margin-bottom: 0px; 
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
+      letter-spacing: -.003em;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 1.08365;
+      display: block;
+      position: relative;
+    }
+   /*tile 2*/
+
+    .iOS11Tile {
+      display: flex;
+      justify-content: center;
+      background-color: #FAFAFA;
+      height: 587px;
+      max-width: 793px;
+      
+      border: solid;
+      border-color: #FFFFFF;
+      border-width: 12px 6px 6px 12px;
+      }
+
+    .iOS11 {
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      }      
+    .iOS11Med {
+      display: none;
+    }
+   /*tile 3*/
+    .watchOSTile {
+      display: flex;
+      justify-content: center;
+      height: 587px;
+      width: 793px;
+      background-color: #FAFAFA;      
+      border: solid;
+      border-color: white;
+      border-width: 12px 6px 6px 12px;
+      }
+
+    .watchOS4 {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 48px;
+    }
+
+    .watchOS4Med {
+      display: none
+    }
+      
+    
+   /*tile 4*/
+    .collegeTile {
+      display: flex;
+      justify-content: center;
+      height: 587px;
+      max-width: 793px;
+      border: solid;
+      border-color: #FFFFFF;
+      border-width: 12px 6px 6px 12px;
+      background-image: url("../img/bts_ipad_pro_large.jpg");
+      background-size: cover;
+      background-position-x: 50%;
+      background-position-y: 50%;
+      }
+    .collegeTile h5 {
+      margin-bottom: -0.4em;
+      }
+      
+
+  /*donate*/
+    .handINhand {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 193px;
+      cursor: pointer;
+    }
+
+    .handINhand img {
+      height: auto;
+      width: auto;
+    }
+
+    .handINhand p {
+      font-size: 17px;
+      font-weight: 400;
+      color: #111111;
+      font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    }
+
+@media only screen and (max-width: 1064px){
+    
+    .headline1{
+        font-size: 44px;
+        line-height: 1.09091;
+        font-weight: 600;
+        letter-spacing: -.002em;
+        font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+        margin: 0px;
+    
+    }
+    .headline2 {
+        font-size: 22px;
+        line-height: 1.18182;
+        font-weight: 400;
+        letter-spacing: .001em;
+        font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+        margin-top: 3px;
+    }
+
+    .unit-copy-wrapper {
+        padding-top: 70px;
+        text-align: center;
+        display: block;
+        position: relative;
+        }
+        .unit-copy-wrapper-tile {
+        width: 100%;
+        height: 136.36px;
+        text-align: center;
+    }
+
+    .unit-header h4 {
+        text-align: center;
+        width: 88%;
+        max-width: 550px;
+        height: 52px;
+        margin-top: 1.08em;
+        margin-bottom: 0px; 
+        
+        text-align: center;
+        letter-spacing: 0em;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 1.1;
+        display: block;
+        position: relative;
+        font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+
+    }
+
+    .sub-header h5 {
+        width: 88%;
+        
+        height: 28px;
+        font-weight: 400;
+        line-height: 0.19048;
+        font-size: 21px;
+        letter-spacing: .011;
+        text-align: center;
+        display: block;
+        position: relative;
+        
+        
+        text-align: center;
+        flex-shrink: 1;
+        font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    }
+
+    .tv4kTile .sub-header h5 {
+        color: white;
+        font-size: 21px;
+        line-height: 1.19048;
+        font-weight: 400;
+        letter-spacing: .012em;
+        font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+        margin-top: 0.8em;
+    }
+
+    .content1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        background-color: #F9F0EB;
+        overflow: visible;
+        flex-grow: 1;
+        z-index: 1;
+        cursor: pointer;
+    }
+    .iPhone8Large {
+        display: none;
+    }
+
+    .iPhone8Med {
+        display: block;
+    
+    }
+    /*content2 1064*/
+    .iPhone10XLarge {
+        display: none;
+    }
+
+    .iPhone10XMed {
+        display: block;
+        padding-bottom: 172px;
+        padding-top: 140px;
+    }
+    /*content3 1064*/
+    .watchLarge {
+        display: none;
+    }
+    .watchMed {
+        display: block;
+    }
+
+    /*apple tv tile 1064*/
+        .tv4kTile {
+        border: solid;
+        border-color: white;
+        border-width: 12px 6px 6px 12px;
+        height: 490px;
+        width: 100%;
+        max-width: 490px;
+        max-height: 490px;
+        background-image: url('../img/1064/tv_4k_medium.jpg');
+        }    
+    /*watchOS4 tile 1064*/
+        .watchOS4 {
+        display: none;
+        }
+
+        .watchOS4Med {
+        display: block;
+        position: relative;
+        left: 6%;
+        width: 100%;
+        }
+
+        .watchOSTile {
+        height: 490px;
+        width: 100%;
+        max-width: 490px;
+        max-height: 490px;
+        overflow: hidden;
+        }
+    
+    /*ios11 tile 1064*/
+        .iOS11 {
+        display: none;
+        }
+        .iOS11Med {
+        display: block;
+        width: 100%;
+        }
+
+        .iOS11Tile {
+        height: 490px;
+        width: 100%;
+        max-width: 490px;
+        max-height: 490px;
+        }
+
+    /*college tile 1064*/
+        .collegeTile {
+        display: flex;
+        justify-content: center;
+        border: solid;
+        border-color: #FFFFFF;
+        border-width: 12px 6px 6px 12px;
+        background-image: url("../img/bts_ipad_pro_large.jpg");
+        background-size: cover;
+        background-position-x: 50%; 
+        height: 490px;
+        width: 100%;
+        max-width: 490px;
+        max-height: 490px;
+        }
+}        
+    @media only screen and (max-width: 735px) {
+            
+    .headline1{
+        font-size: 32px;
+        line-height: 1.125;
+        font-weight: 600;
+        letter-spacing: .004em;
+        font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+        margin: 0px;
+       
+      }
+      .headline2 {
+        font-size: 19px;
+        line-height: 1.42115;
+        font-weight: 400;
+        letter-spacing: .001em;
+        font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+        margin-top: 3px;
+        
+      }
+  
+      
+    
+      .unit-copy-wrapper {
+        padding-top: 44px;
+        text-align: center;
+        display: block;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+      }
+     
+  
+      .unit-copy-wrapper-tile {
+        width: 688px;
+        height: 136.36px;
+        text-align: center;
+      }
+  
+      .unit-header h4 {
+        text-align: center;
+        width: 88%;
+        max-width: 550px;
+        height: 52px;
+        margin-top: 1.08em;
+        margin-bottom: 0px; 
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        letter-spacing: 0em;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 1.1;
+        display: block;
+        position: relative;
+        font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+      }
+  
+      .sub-header h5 {
+        width: 88%;
+        max-width: 550px;
+        height: 28px;
+        font-weight: 400;
+        line-height: 0.19048;
+        font-size: 19px;
+        letter-spacing: .011;
+        text-align: center;
+        display: block;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        flex-shrink: 1;
+        font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+      }
+      .tileContent img {
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+      }
+  
+  
+      /*content 735*/
+        /*content1 735*/
+          .content1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            height: 500px;
+            width: 100%;
+            background-color: #F9F0EB;
+            cursor: pointer;
+          }
+          .headline1 {
+            font-size: 32px;
+            font-weight: 600;
+            letter-spacing: .004em;
+            font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+            
+          }
+  
+          .headline2 {
+            font-size: 19px;
+            font-weight: 400;
+            letter-spacing: .012em;
+          }
+  
+          .iPhone8Large {
+            display: none;
+          }
+  
+          .iPhone8Med {
+            display: none;
+          }
+          
+          .iPhone8Small {
+            display: block;
+          }
+  
+        /*content2 735*/
+          .content2 {
+            display: flex;
+            flex-direction: column;
+            height: 500px;
+            width: 100%;
+            background-color: #FAFAFA;
+            justify-content: flex-end;
+            align-items: center;
+            border-top-color: white;
+            border-bottom-color: white;
+            border-top: solid;
+            border-color: white;
+            cursor: pointer;
+          }
+          .iPhone10XLarge {
+            display: none;
+          }
+  
+          .iPhone10XMed {
+            display: none;
+          }
+          .iPhone10XSmall {
+            display: block;
+            width: 163px;
+            height: 333px;
+            padding-bottom: 35px;
+          }
+        /*content3 735*/
+          .content3 {
+            display: flex;
+            flex-direction: column;
+            height: 500px;
+            background-color: #FAFAFA;
+            justify-content: flex-start;
+            align-items: center;
+            border-top: solid;
+            border-color: white;
+            cursor: pointer;
+          }
+          .watchLarge{
+            display: none;
+          }
+  
+          .watchMed {
+            display: none;
+          }
+          .watchSmall {
+            display: block;
+          }
+        /*tile content 735*/
+          .tv4kTile {
+            height: 500px;
+            width: 100%;
+            border: none; 
+            background-image: url('../img/tv_4k_large.jpg');
+          }
+  
+          .iOS11Tile .iOS11 {
+            display: none;
+          }
+          .iOS11Tile {
+            height: 500px;
+            width: 100%;
+            border: none;
+          }
+  
+          .watchOSTile .watchOS4 {
+            display: none;
+          }
+          
+    
+    
+          .watchOSTile {
+            height: 500px;
+            width: 100%;
+            max-width: 490px;
+            max-height: 490px;
+            overflow: hidden;
+            border: none;
+          }
+  
+          .collegeTile {
+            height: 500px;
+            width: 100%;
+            border: none;
+          }
+    }
+
+    @media only screen and (max-width: 320px) {
+        .iOS11Tile .iOS11 {
+          display: none;
+        }
+      
+      
+        .iOS11Tile .iOS11 {
+          display: none;
+        }
+  
+        .watchOSTile .watchOS4 {
+          display: none;
+        }
+    }

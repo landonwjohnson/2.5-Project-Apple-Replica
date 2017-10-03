@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import '../css/header.css';
 import classnames from 'classnames';
 import AppleIcon from '../img/svg/Apple-Icon.svg';
 import SearchIcon from '../img/svg/Search-Icon.svg';

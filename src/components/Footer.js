@@ -1,9 +1,10 @@
 import React from 'react';
-import classnames from 'classnames'
+import classnames from 'classnames';
+import '../css/footer.css';
 import LocaleFlag from './../img/USflag.png';
 
 
-export default class Content extends React.Component {
+export default class Footer extends React.Component {
 
     constructor(){
         super();

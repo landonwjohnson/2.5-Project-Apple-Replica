@@ -1,0 +1,86 @@
+.product-section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 951px;
+    margin-top: 44px;
+    padding-top: 74px;
+}
+
+.product-section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 1063px;
+    padding-top: 74px;
+}
+
+.product-section3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 1063px;
+    padding-top: 74px;
+}
+
+.theme-dark {
+    background-color: #1A1A1A;
+    color: white;
+}
+
+.theme-light {
+    background-color: #990F0F;
+    color: #262626;
+}
+
+.titleContainer{
+    z-index: 1;
+    position: relative;
+    bottom: 4%;
+    text-align: center;
+}
+
+.product-headline {
+    font-size: 80px;
+    line-height: 1.065;
+    font-weight: 500;
+    margin-bottom: 10px;
+    letter-spacing: -.02em; 
+}
+
+.typography-headline {
+    font-size: 40px;
+    letter-spacing: .008em;
+    font-weight: 200;
+    margin-top: 15px;
+}
+
+.check-me-out {
+    color: #6bf;
+}
+
+.LargeMacPro {
+    display: block;
+    max-width: 769px;
+    max-height: 791px;
+    width: 100%;
+    position: relative;
+    bottom: 14%;
+}
+
+.LargeiMac {
+    display: block;
+    max-width: 1047px;
+    width: 100%;
+    position: relative;
+    top: 3%;
+}
+
+.LargeMacBookPro {
+    display: block;
+    max-width: 900px;
+    width: 100%;
+    position: relative;
+}

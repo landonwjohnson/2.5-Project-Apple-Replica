@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import '../css/content1.css';
 import iPhone8GoldLarge from '../img/iphone_8_largetall.jpg';
 import iPhone8GoldMed from '../img/1064/iphone_8_mediumtall.jpg';
 import iPhone8GoldSmall from '../img/735/iphone_8_small.jpg'
@@ -21,7 +22,7 @@ import handINhand from './../img/hand_in_hand_logo_large.jpg';
 import appleTVlogo from './../img/tv_4k_logo_large.png';
 
 
-export default class Content extends React.Component {
+export default class Content1 extends React.Component {
     render() {
         return (
             <div className="content">
