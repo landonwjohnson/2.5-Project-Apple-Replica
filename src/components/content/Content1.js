@@ -1,25 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import '../css/content1.css';
-import iPhone8GoldLarge from '../img/iphone_8_largetall.jpg';
-import iPhone8GoldMed from '../img/1064/iphone_8_mediumtall.jpg';
-import iPhone8GoldSmall from '../img/735/iphone_8_small.jpg'
-import iPhone10XLarge from '../img/iphone_x_largetall.jpg';
-import iPhone10XMed from '../img/1064/iphone_x_mediumtall.jpg';
-import iPhone10XSmall from '../img/735/iphone_x_small.jpg';
-import watchTitleSVG from '../img/svg/watch_series_3_large.svg';
-import watchLarge from './../img/watch_largetall.jpg';
-import watchMed from './../img/1064/watch_mediumtall.jpg';
-import watchSmall from './../img/735/watch_small.jpg';
-import TVWonderWoman from './../img/tv_4k_large.jpg';
-import TVWonderWomanMed from './../img/1064/tv_4k_medium.jpg';
-import iOS11 from './../img/ios_large.jpg';
-import iOS11Med from './../img/1064/ios_medium.jpg';
-import watchOS4 from './../img/watchos_large.jpg';
-import watchOS4Med from './../img/1064/watchos_medium.jpg';
-import collegeDeal from './../img/bts_ipad_pro_large.jpg';
-import handINhand from './../img/hand_in_hand_logo_large.jpg';
-import appleTVlogo from './../img/tv_4k_logo_large.png';
+import '../../css/content1.css';
+import iPhone8GoldLarge from '../../img/iphone_8_largetall.jpg';
+import iPhone8GoldMed from '../../img/1064/iphone_8_mediumtall.jpg';
+import iPhone8GoldSmall from '../../img/735/iphone_8_small.jpg'
+import iPhone10XLarge from '../../img/iphone_x_largetall.jpg';
+import iPhone10XMed from '../../img/1064/iphone_x_mediumtall.jpg';
+import iPhone10XSmall from '../../img/735/iphone_x_small.jpg';
+import watchTitleSVG from '../../img/svg/watch_series_3_large.svg';
+import watchLarge from '../../img/watch_largetall.jpg';
+import watchMed from '../../img/1064/watch_mediumtall.jpg';
+import watchSmall from '../../img/735/watch_small.jpg';
+import TVWonderWoman from '../../img/tv_4k_large.jpg';
+import TVWonderWomanMed from '../../img/1064/tv_4k_medium.jpg';
+import iOS11 from '../../img/ios_large.jpg';
+import iOS11Med from '../../img/1064/ios_medium.jpg';
+import watchOS4 from '../../img/watchos_large.jpg';
+import watchOS4Med from '../../img/1064/watchos_medium.jpg';
+import collegeDeal from '../../img/bts_ipad_pro_large.jpg';
+import handINhand from '../../img/hand_in_hand_logo_large.jpg';
+import appleTVlogo from '../../img/tv_4k_logo_large.png';
 
 
 export default class Content1 extends React.Component {

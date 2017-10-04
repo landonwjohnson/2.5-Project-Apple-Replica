@@ -152,7 +152,7 @@ a:hover{
     height: 100%;
     background-color: black;
     position: fixed;
-    z-index: 1;
+    z-index: 9998;
     padding-right: 48px; 
     padding-left: 48px;
     right: 0;

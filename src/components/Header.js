@@ -11,8 +11,8 @@ import OrdersIcon from '../img/svg/cart-menu/orders-icon.svg';
 import AccountIcon from '../img/svg/cart-menu/account-icon.svg';
 import SignInIcon from '../img/svg/cart-menu/sign-in-icon.svg';
 import { Link, Route } from 'react-router-dom';
-import Content1 from './Content1';
-import Content2 from './Content2';
+import Content1 from './content/Content1';
+import Content2 from './content/Content2';
 
 
 export default class Header extends React.Component {
@@ -114,7 +114,7 @@ export default class Header extends React.Component {
                         <li className={navLink}>iPhone</li>
                         <li className={navLink}>Watch</li>
                         <li className={navLink}>TV</li>
-                        <li className={navLink}>Music</li>
+                        <li className={navLink}><Link to="/Music"> Music </Link></li>
                         <li className={navLink}>Support</li>
                         <li className={navLink} onClick={this.handleSearchClick}><img className="searchIcon" src={SearchIcon} /></li>
                         <li className="cartIcon" onClick={this.handleCartClick} ><img src={CartIcon} /> </li>
@@ -142,7 +142,7 @@ export default class Header extends React.Component {
                         <li className="m-nav-list">iPhone</li>
                         <li className="m-nav-list">Watch</li>
                         <li className="m-nav-list">TV</li>
-                        <li className="m-nav-list">Music</li>
+                        <li className="m-nav-list"><Link to="/Music"> Music </Link></li>
                         <li className="m-nav-list">Support</li>
                     </ul>  
                 </div>

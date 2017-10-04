@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Content1 from './Content1';
-import Content2 from './Content2';
+import Content1 from './content/Content1';
+import Content2 from './content/Content2';
+import Content7 from './content/Content7';
 import {Route, Switch} from 'react-router-dom';
 
 export default class Body extends React.Component {
@@ -9,8 +10,9 @@ export default class Body extends React.Component {
         return(
             <div>
                 <Switch>
-                <Route component={ Content1 } path="/" exact />
                 <Route component={ Content2 } path="/Mac" />
+                <Route component={ Content7 } path="/Music" />
+                <Route component={ Content1 } path="/" />
                 </Switch>
             </div>
         )
