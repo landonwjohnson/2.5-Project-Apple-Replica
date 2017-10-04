@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import '../../css/content/content2.css';
-import LargeMacPro from '../../img/content2/imac_pro_large.jpg';
-import LargeiMac from '../../img/content2/imac_large.jpg';
-import SmalliMac from '../../img/content2/imac_small_2x.jpg';
-import LargeMacBookPro from '../../img/content2/macbookpro_tb_large.jpg';
-import SmallMacPro from '../../img/content2/imac_pro_small_2x.jpg';
+import LargeMacPro from '../../img/content/content2/imac_pro_large.jpg';
+import LargeiMac from '../../img/content/content2/imac_large.jpg';
+import SmalliMac from '../../img/content/content2/imac_small_2x.jpg';
+import LargeMacBookPro from '../../img/content/content2/macbookpro_tb_large.jpg';
+import SmallMacPro from '../../img/content/content2/imac_pro_small_2x.jpg';
 
 
 
