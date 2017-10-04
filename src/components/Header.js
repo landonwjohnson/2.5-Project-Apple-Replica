@@ -35,6 +35,7 @@ export default class Header extends React.Component {
     handleCartClick(){
         console.log('Hi');
         this.setState({mobileNavOpen: false})
+        this.setState({isHeaderBlack: false})
         if(this.state.cartMenuOpen){
             this.setState({cartMenuOpen: false})
         }
@@ -71,6 +72,8 @@ export default class Header extends React.Component {
             this.setState({isHeaderBlack: true})
         }
     }
+
+    
 
 
     

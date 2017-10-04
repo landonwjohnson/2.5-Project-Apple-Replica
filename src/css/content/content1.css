@@ -178,7 +178,7 @@
       height: 587px;
       width: 100%;
       max-width: 793px;
-      background-image: url('../img/tv_4k_large.jpg');
+      background-image: url('../../img/content/content1/tv_4k_large.jpg');
       background-position-x: 50%;
       background-position-y: 50%;
       }
@@ -265,7 +265,7 @@
       border: solid;
       border-color: #FFFFFF;
       border-width: 12px 6px 6px 12px;
-      background-image: url("../img/bts_ipad_pro_large.jpg");
+      background-image: url("../../img/content/content1/bts_ipad_pro_large.jpg");
       background-size: cover;
       background-position-x: 50%;
       background-position-y: 50%;
@@ -424,7 +424,7 @@
         width: 100%;
         max-width: 490px;
         max-height: 490px;
-        background-image: url('../img/1064/tv_4k_medium.jpg');
+        background-image: url('../../img/content/content1/1064/tv_4k_medium.jpg');
         }    
     /*watchOS4 tile 1064*/
         .watchOS4 {
@@ -469,7 +469,7 @@
         border: solid;
         border-color: #FFFFFF;
         border-width: 12px 6px 6px 12px;
-        background-image: url("../img/bts_ipad_pro_large.jpg");
+        background-image: url("../../img/content/content1/bts_ipad_pro_large.jpg");
         background-size: cover;
         background-position-x: 50%; 
         height: 490px;
@@ -653,7 +653,7 @@
             height: 500px;
             width: 100%;
             border: none; 
-            background-image: url('../img/tv_4k_large.jpg');
+            background-image: url('../../img/content/content1/tv_4k_large.jpg');
           }
   
           .iOS11Tile .iOS11 {

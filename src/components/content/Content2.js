@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import '../../css/content2.css';
+import '../../css/content/content2.css';
 import LargeMacPro from '../../img/content2/imac_pro_large.jpg';
 import LargeiMac from '../../img/content2/imac_large.jpg';
 import SmalliMac from '../../img/content2/imac_small_2x.jpg';
