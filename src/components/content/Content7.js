@@ -9,11 +9,6 @@ import MusicNote from '../../video/content/content7/music-note.mp4';
 
 export default class Content7 extends React.Component {
 
-    setUpControl(){
-        document.getElementsByClassName(MusicNote).controls=false;
-        document.getElementsByClassName(MusicNote).duration=false;
-    }
-
     render() {
         return (
             <div>
@@ -26,7 +21,7 @@ export default class Content7 extends React.Component {
                             <button className="try-me"> Try it free for three months </button>
                             <p className="learn-more"> Learn more about Apple Music </p>
                         </div>
-                        <video autoPlay className="MusicNote" src = {MusicNote}  />
+                        <video autoPlay controls="false" className="MusicNote" src = {MusicNote}  />
                     </div>
                 </div>
             </div>
