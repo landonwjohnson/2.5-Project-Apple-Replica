@@ -8,6 +8,11 @@ import MusicNote from '../../video/content/content7/music-note.mp4';
 
 
 export default class Content7 extends React.Component {
+
+    test(){
+        document.getElementsByClassName(MusicNote).controls=false;
+    }
+
     render() {
         return (
             <div>

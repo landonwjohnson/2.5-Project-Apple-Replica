@@ -28,6 +28,7 @@ export default class Header extends React.Component {
         this.handleCartClick = this.handleCartClick.bind(this);
         this.handleMobileNavClick = this.handleMobileNavClick.bind(this);
         this.handleSearchClick = this.handleSearchClick.bind(this);
+        this.handleAppleClick = this.handleAppleClick.bind(this);
       
     }
     handleCartClick(){
@@ -71,6 +72,12 @@ export default class Header extends React.Component {
         }
     }
 
+    handleAppleClick(){
+        this.setState({cartMenuOpen: false})
+        this.setState({mobileNavOpen: false})
+        this.setState({isHeaderBlack: false})
+    }
+
     
 
 
@@ -106,7 +113,7 @@ export default class Header extends React.Component {
                     
                     <ul className="nav">
                         <li className ="menuicon-bread" onClick={this.handleMobileNavClick}> <span className = "menuicon-bread-crust-top"/> <span className = "menuicon-bread-crust-bottom"/> </li>
-                        <li className="appleIcon"><Link to="/"><img src={AppleIcon}/> </Link></li>
+                        <li className="appleIcon"><Link to="/" onClick={this.handleAppleClick}><img src={AppleIcon}/> </Link></li>
                         <div className={searchClasses} >
                         <img className="searchform-icon" src={SearchIcon}/><input className="searchform-input" placeholder="Search apple.com" /><span className="close-search" onClick={this.handleSearchClick}/>
                         </div> 
@@ -138,12 +145,12 @@ export default class Header extends React.Component {
                 </div>
                 <div className={mobileNavClasses}>
                     <ul>
-                        <li className="m-nav-list"><Link to="/Mac">Mac</Link></li>
+                        <li className="m-nav-list" ><Link to="/Mac"   onClick={this.handleMobileNavClick}>Mac</Link></li>
                         <li className="m-nav-list">iPad</li>
-                        <li className="m-nav-list"><Link to="/iPhone">iPhone</Link></li>
+                        <li className="m-nav-list"><Link to="/iPhone" onClick={this.handleMobileNavClick}>iPhone</Link></li>
                         <li className="m-nav-list">Watch</li>
                         <li className="m-nav-list">TV</li>
-                        <li className="m-nav-list"><Link to="/Music"> Music </Link></li>
+                        <li className="m-nav-list"><Link to="/Music"  onClick={this.handleMobileNavClick}> Music </Link></li>
                         <li className="m-nav-list">Support</li>
                     </ul>  
                 </div>
