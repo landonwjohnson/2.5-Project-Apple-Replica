@@ -29,8 +29,12 @@ export default class Header extends React.Component {
         this.handleMobileNavClick = this.handleMobileNavClick.bind(this);
         this.handleSearchClick = this.handleSearchClick.bind(this);
         this.handleAppleClick = this.handleAppleClick.bind(this);
+        
       
     }
+
+   
+
     handleCartClick(){
         console.log('Hi');
         this.setState({mobileNavOpen: false})
@@ -45,12 +49,19 @@ export default class Header extends React.Component {
 
     handleMobileNavClick(){
         console.log('mobile click test')
+        document.querySelector( "#nav-toggle" ).addEventListener( "click", function() {
+            this.classList.toggle( "active" );
+          });
         this.setState({cartMenuOpen: false})
         if(this.state.mobileNavOpen){
+            
             this.setState({mobileNavOpen: false})
             this.setState({isHeaderBlack: false})
         }
+
+        
         else {
+            
             this.setState({mobileNavOpen: true})
             this.setState({isHeaderBlack: true})
         }
@@ -78,11 +89,20 @@ export default class Header extends React.Component {
         this.setState({isHeaderBlack: false})
     }
 
+
+
+        
+    
+
+    
+
     
 
 
     
     render() {
+
+        
         var bagClasses = classnames({
             "bagview-content--show": this.state.cartMenuOpen,
             "bagview-content": true
@@ -107,16 +127,19 @@ export default class Header extends React.Component {
             "ac-gn-header--black": this.state.isHeaderBlack,
             "ac-gn-header": true
         })
+        
+
+        
+    
         return (
             <div>
                 <div className={headerColor}>
                     
                     <ul className="nav">
-                        <li className ="menuicon-bread" onClick={this.handleMobileNavClick}> <span className = "menuicon-bread-crust-top"/> <span className = "menuicon-bread-crust-bottom"/> </li>
+                        <li className ="menuicon-bread" onClick={this.handleMobileNavClick}><div id="nav-toggle" href="#"  ><div className="bread-menu"><span className="top"></span><span className="bottom"> </span></div></div> </li>
                         <li className="appleIcon"><Link to="/" onClick={this.handleAppleClick}><img src={AppleIcon}/> </Link></li>
                         <div className={searchClasses} >
-                        <img className="searchform-icon" src={SearchIcon}/><input className="searchform-input" placeholder="Search apple.com" /><span className="close-search" onClick={this.handleSearchClick}/>
-                        </div> 
+                        <img className="searchform-icon" src={SearchIcon}/><input className="searchform-input" placeholder="Search apple.com" /><span className="close-search" onClick={this.handleSearchClick}/></div> 
                         <li className={navLink}><Link to="/Mac"> Mac</Link></li>
                         <li className={navLink}>iPad</li>
                         <li className={navLink}><Link to="/iPhone"> iPhone </Link></li>
