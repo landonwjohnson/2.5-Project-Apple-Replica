@@ -49,14 +49,97 @@ a:hover{
   }
 
   /* search bar */
-      .close-search {
+
+
+      /*close search x*/
+        #close-search-toggle{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          right: 2.8%;
+          position: relative;
+          height: 30px;
+          width: 30px;
+          background: black;
+          animation: blackness 0.9s ease-in-out;
+          cursor: pointer;
+        }
+        .close-search {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+        }
+        #close-search-toggle, #close-search-toggle .left, #close-search-toggle .right {
+          transition: all 0.5s ease-in-out;
+      } 
+      
+      #close-search-toggle .left{
+        z-index: 50;
         display: block;
-        background-color: blue;
-        height: 30px;
-        width: 30px;
+        width: 1px;
+        height: 17px;
+        background-color: grey;
         position: relative;
-        right: 30px;
+        opacity: 1;
+        z-index: 8;
+        transform: rotate(45deg);
+        animation: slashXleft 0.5s ease-in-out;
       }
+      
+      #close-search-toggle .right{
+        display: inline-block;
+        width: 1px;
+        height: 17px;
+        background-color: grey;
+        position: relative;
+        opacity: 1;
+        z-index: 9;
+        transform: rotate(-45deg);
+        animation: slashXright 0.5s ease-in-out;
+      }
+      
+      @keyframes slashXright {
+        0%{
+          transform: rotate(0deg);
+          left: 3px;
+          background-color: white;
+          opacity: 0.5;
+        }
+        100%{
+          transform: rotate(-45deg);
+          left: 0px;
+          background-color: grey;
+          opacity: 1;
+        }
+      }
+
+      @keyframes slashXleft {
+        0%{
+          transform: rotate(0deg);
+          right: 3px;
+          background-color: white;
+          opacity: 0.5;
+        }
+        100%{
+          transform: rotate(45deg);
+          right: 0px;
+          background-color: grey;
+          opacity: 1;
+        }
+      }
+
+      @keyframes blackness{
+        0%{
+          background: none;
+        }
+        100%{
+          background: black;
+        }
+      }
+      
+
+
 
       .searchform-wrapper {
         display: none !important;
@@ -89,7 +172,7 @@ a:hover{
         height: 16px;
         width: 19px;
         left: 18%;
-      }
+        animation: searchinputIcon 0.5s ease-in-out;      }
 
       .searchform-input {
         display: block;
@@ -101,9 +184,29 @@ a:hover{
         background-color: transparent;
         border: none;
         outline: none;
-        left: 19%
-        
+        left: 19%;
+        animation: searchinput 0.5s ease-in-out;
       }
+
+      @keyframes searchinput {
+        0%{
+          left: 38%;
+        }
+        100%{
+          left: 19%;
+        }
+      }
+
+      @keyframes searchinputIcon {
+        0%{
+          left: 32%;
+        }
+        100%{
+          left: 18%;
+        }
+      }
+
+
 
   .cartIcon {
     display: flex;
@@ -129,11 +232,13 @@ a:hover{
   }
 
   .MenuItem--hide  {
-    visibility: hidden !important;
+    transform: scale(0,0);
+    transition: 0.5s ease-in-out;
   }
-
+ 
   .MenuItem  {
     visibility: initial !important;
+    transition: 0.5s ease-in-out;
   }
   
   .nav li:hover{
@@ -165,8 +270,9 @@ a:hover{
     right: 0;
     left: 0;
     animation: 
-      mobilenav 1s,
-      forwards 1s;
+    
+      mobilenav 1s ,
+      forwards 1s ;
   }
 
   @keyframes mobilenav {
@@ -184,9 +290,11 @@ a:hover{
     0%{
       opacity: 0;
       
+      
     }
     100% {
       opacity: 1;
+      
     }
   }
 
@@ -396,9 +504,14 @@ a:hover{
     .nav .cartIcon {
         display: block;
     }
+    .mobile-nav .cartIcon {
+      display: block !important;
+    }
 
     .cartIcon img {
       height: 24px;
+    
+      
     }
 
     

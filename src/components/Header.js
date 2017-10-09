@@ -51,6 +51,7 @@ export default class Header extends React.Component {
     handleMobileNavClick(){
         console.log('mobile click test')
         this.setState({cartMenuOpen: false})
+        
         if(this.state.mobileNavOpen){
             
             this.setState({mobileNavOpen: false})
@@ -73,11 +74,13 @@ export default class Header extends React.Component {
             this.setState({isHeaderBlack: false})
             this.setState({searchOpen: false})
             this.setState({navLinkShow: false})
+           
         }
         else {
             this.setState({searchOpen: true})
             this.setState({navLinkShow: true})
             this.setState({isHeaderBlack: true})
+            
         }
     }
 
@@ -102,7 +105,10 @@ export default class Header extends React.Component {
 
         let mobileNavX = function() {
             document.getElementById("nav-toggle").classList.toggle("active");
+        }
 
+        let searchCloseX = function() {
+            document.getElementById("close-search-toggle").classList.toggle("active");
         }
 
         
@@ -142,7 +148,8 @@ export default class Header extends React.Component {
                         <li className ="menuicon-bread" onClick={this.handleMobileNavClick}><div id="nav-toggle" onClick={mobileNavX} href="#"  ><div className="bread-menu"><span className="top"></span><span className="bottom"> </span></div></div> </li>
                         <li className="appleIcon"><Link to="/" onClick={this.handleAppleClick}><img src={AppleIcon}/> </Link></li>
                         <div className={searchClasses} >
-                        <img className="searchform-icon" src={SearchIcon}/><input className="searchform-input" placeholder="Search apple.com" /><span className="close-search" onClick={this.handleSearchClick}/></div> 
+                        <img className="searchform-icon" src={SearchIcon}/><input className="searchform-input" placeholder="Search apple.com" maxLength={70} />
+                        <div id="close-search-toggle" onClick={this.handleSearchClick}> <div className="close-search" /> <span className="left"></span> <span className="right"> </span></div></div> 
                         <li className={navLink}><Link to="/Mac"> Mac</Link></li>
                         <li className={navLink}>iPad</li>
                         <li className={navLink}><Link to="/iPhone"> iPhone </Link></li>
@@ -151,7 +158,7 @@ export default class Header extends React.Component {
                         <li className={navLink}><Link to="/Music"> Music </Link></li>
                         <li className={navLink}>Support</li>
                         <li className={navLink} onClick={this.handleSearchClick}><img className="searchIcon" src={SearchIcon} /></li>
-                        <li className="cartIcon" onClick={this.handleCartClick} ><img src={CartIcon} /> </li>
+                        <li className="cartIcon" onClick={this.handleCartClick}  ><img src={CartIcon} /> </li>
                     </ul>
                     
                 </div>
