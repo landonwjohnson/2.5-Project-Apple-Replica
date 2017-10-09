@@ -13,6 +13,7 @@ import SignInIcon from '../img/svg/cart-menu/sign-in-icon.svg';
 import { Link, Route } from 'react-router-dom';
 
 
+
 export default class Header extends React.Component {
 
 
@@ -49,9 +50,6 @@ export default class Header extends React.Component {
 
     handleMobileNavClick(){
         console.log('mobile click test')
-        document.querySelector( "#nav-toggle" ).addEventListener( "click", function() {
-            this.classList.toggle( "active" );
-          });
         this.setState({cartMenuOpen: false})
         if(this.state.mobileNavOpen){
             
@@ -102,6 +100,11 @@ export default class Header extends React.Component {
     
     render() {
 
+        let mobileNavX = function() {
+            document.getElementById("nav-toggle").classList.toggle("active");
+
+        }
+
         
         var bagClasses = classnames({
             "bagview-content--show": this.state.cartMenuOpen,
@@ -136,7 +139,7 @@ export default class Header extends React.Component {
                 <div className={headerColor}>
                     
                     <ul className="nav">
-                        <li className ="menuicon-bread" onClick={this.handleMobileNavClick}><div id="nav-toggle" href="#"  ><div className="bread-menu"><span className="top"></span><span className="bottom"> </span></div></div> </li>
+                        <li className ="menuicon-bread" onClick={this.handleMobileNavClick}><div id="nav-toggle" onClick={mobileNavX} href="#"  ><div className="bread-menu"><span className="top"></span><span className="bottom"> </span></div></div> </li>
                         <li className="appleIcon"><Link to="/" onClick={this.handleAppleClick}><img src={AppleIcon}/> </Link></li>
                         <div className={searchClasses} >
                         <img className="searchform-icon" src={SearchIcon}/><input className="searchform-input" placeholder="Search apple.com" /><span className="close-search" onClick={this.handleSearchClick}/></div> 

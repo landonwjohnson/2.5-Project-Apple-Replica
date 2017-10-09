@@ -429,7 +429,8 @@ a:hover{
       height: 1px;
       background-color: #fff;
       position: relative;
-      z-index: 8
+      z-index: 9;
+     
     }
     
     #nav-toggle .bottom{
@@ -439,23 +440,28 @@ a:hover{
       height: 1px;
       background-color: #fff;
       position: relative;
-      z-index: 9;
+      z-index: 8;
+    
     }
     
     #nav-toggle.active .top {
      bottom: 0;
+     top: 0;
+    
     }
     
     #nav-toggle.active .bottom {
      top: 0;
+     bottom: 0;
+    
     }
     
     #nav-toggle.active .top {
-      transform: rotate(45deg);
+      transform: rotate(135deg);
     }
     
     #nav-toggle.active .bottom {
-      transform: rotate(-45deg)
+      transform: rotate(-135deg)
     }
     
   }
