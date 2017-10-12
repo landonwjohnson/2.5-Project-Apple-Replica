@@ -10,14 +10,12 @@ export default class Body extends React.Component {
     render() {
         return(
             <div>
-                <HashRouter>
                 <Switch>
                     <Route component={ Content2 } path="/Mac" />
                     <Route component={ Content4 } path="/iPhone"/>
                     <Route component={ Content7 } path="/Music" />
                     <Route component={ Content1 } path="/" />
                 </Switch>
-                </HashRouter>
             </div>
         )
     }
