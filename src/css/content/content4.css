@@ -6,7 +6,7 @@
     width: 100%;
 }
 
-.section-compare{
+.section-3{
     margin-top: 45px;
     margin-bottom: 45px;
     display: flex;
@@ -20,14 +20,14 @@
     overflow: hidden;
 }
 
-.title-block-right {
+.title-block-3 {
     max-width: 650px;
     max-height: 500px;
     width: 100%;
     height: 100%;
 }
 
-.titleContainer-right {
+.titleContainer-3 {
     display: block;
     position: relative;
     top: 30%;
@@ -76,7 +76,7 @@
     margin-bottom: 0px;
 }
 
-.section-giant-step{
+.section-4{
     margin-top: 45px;
     margin-bottom: 45px;
     display: flex;
@@ -90,7 +90,7 @@
     overflow: hidden;
 }
 
-.title-block-center {
+.title-block-4 {
     display: block;
     text-align: center;
     max-width: 650px;
@@ -98,7 +98,7 @@
     width: 100%;
     height: 100%;
 }
-.titleContainer-center {
+.titleContainer-4 {
     display: block;
     position: relative;
     top: 10%;
@@ -130,46 +130,201 @@
 
 
 @media only screen and (max-width: 1064px) {
-    .typographyHeadline {
-        
-        font-size: 52px;
-        letter-spacing: -.005em;
-        font-weight: 200;
-        font-weight: 600;
-        word-break: keep-all;
-        color: #111;
-    }
-    .description {
-        color: #333;
-        font-size: 21px;
-        font-weight: 400;
-    }
-    .section-giant-step{
-        margin-top: 45px;
-        margin-bottom: 45px;
+   
+    
+    
+    .section-3{
+        margin-top: 23px;
+        margin-bottom: 23px;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
         align-items: center;
-        height: 850px;
+        justify-content: space-around;
+        height: 100%;
         max-width: 1064px;
         width: 100%;
         background-color: #FAFAFA;
         overflow: hidden;
     }
 
-    .title-block-center {
-        position: absolute;
-        max-height: 258px;
+    .title-block-3{
+        display: block;
+        max-width: 368px;
+        max-height: 400px;
+        width: 100%;
+        
+    }
+
+    .titleContainer-3 {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        height: 100%;
+        top: 0%;
+        left: 0%;
+    }
+
+    .checkMeOut {
+        margin-top: 0px;
+        font-size: 19px;
+        text-align: center;
+        margin-bottom: 20px;
+
+    }
+    .CompareLarge {
+        display: none;
+    
+    }
+
+    .CompareMed {
+        display: block;
+        height: 100%;
+    }
+
+    .CompareMed img{
+        display: flex;
+    }
+
+   
+    .typographyHeadline {
+        text-align: center;
+        font-size: 52px;
+        letter-spacing: -.005em;
+        font-weight: 200;
+        font-weight: 600;
+        word-break: keep-all;
+        color: #111;
+        width: 100%;
+        
+    }
+    .description {
+        color: #333;
+        font-size: 21px;
+        font-weight: 400;
+    }
+    .section-4{
+
+        margin-top: 23px;
+        margin-bottom: 23px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 100%;
+        max-width: 1064px;
+        width: 100%;
+        background-color: #FAFAFA;
+        overflow: hidden;
+    }
+
+    .iOS11Icon{
+        margin-top: 20px;
+    }
+
+    .titleContainer-4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;        
+        
+        width: 1000px;
+        left: 0;
+        right: 0;
+        
+    }
+
+    .titleContainer-4 .typographyHeadline {
+        width: 613px;
+    }
+
+    .titleContainer-4 .description {
+        width: 613px;
+        
+    }
+
+
+    .CompareMed img{
+        display: flex;
+    }
+
+    .title-block-4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1000px;
+        max-height: 400px;
+        width: 100%;
         
     }
     .iOSLarge {
         display: none;
     }
     .iOSMed {
-        display:block;
-        position: relative;
-        max-height: 483px;
-        top: 43%;
+        padding-top: 40px;
+        display: block;
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 569px){
+    .section-3{
+        margin-top: 23px;
+        margin-bottom: 23px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 100%;
+        max-width: 1064px;
+        width: 100%;
+        background-color: #FAFAFA;
+        overflow: hidden;
+    }
+    
+    .typographyHeadline {
+        font-size: 44px;
+    }
+
+    
+    .titleContainer-4 .typographyHeadline {
+        max-width: 310px;
+    }
+
+    .titleContainer-4 .description {
+        max-width: 400px;
+        width: 100%;
+    }
+
+    .iOS11L {
+        max-width: 65px;
+    }
+
+    .CompareMed  {
+        width: 80%;
+        height: 80%;
+        margin-left: 0;
+    }
+
+    .checkMeOut {
+        font-size: 18px;
+    }
+
+    .description {
+        font-size: 18px;
+    }
+} 
+
+@media only screen and (max-width: 320px) {
+
+    .titleContainer-3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-3 .typographyHeadline {
+        width: 250px;
+    }
+
+    .section-4 .description {
+        width: 250px;
     }
 }

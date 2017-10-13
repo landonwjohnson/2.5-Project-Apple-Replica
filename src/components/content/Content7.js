@@ -8,7 +8,10 @@ import MusicNote from '../../video/content/content7/music-note.mp4';
 
 
 export default class Content7 extends React.Component {
+  
+        
 
+    
     render() {
         return (
             <div>
@@ -21,7 +24,7 @@ export default class Content7 extends React.Component {
                             <button className="try-me"> Try it free for three months </button>
                             <p className="learn-more"> Learn more about Apple Music </p>
                         </div>
-                        <video autoPlay controls="false" className="MusicNote" src = {MusicNote}  />
+                        <video id="AppleMusicNote" autoPlay controls="false" className="MusicNote" src = {MusicNote}  />
                     </div>
                 </div>
             </div>

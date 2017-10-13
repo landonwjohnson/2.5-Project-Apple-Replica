@@ -14,9 +14,9 @@ export default class Content4 extends React.Component {
         return (
             <div>
                 <div className="Section-Blocks">
-                    <div className="section-compare">
-                        <div className="title-block-right">
-                            <div className="titleContainer-right">
+                    <div className="section-3">
+                        <div className="title-block-3">
+                            <div className="titleContainer-3">
                                 <h2 className="typographyHeadline">Compare <br/> iPhone Models</h2>
                                 <h2 className="checkMeOut"> Find the best iPhone for you </h2>
                             </div>
@@ -25,11 +25,10 @@ export default class Content4 extends React.Component {
                         <div className="CompareMed"> <img src={CompareMed}/></div>     
                         <div className="CompareSmall"> <img src={CompareSmall}/></div>
                     </div>
-                    <div className="section-giant-step">
-                    <div className="measure"> Measure </div>
-                        <div className="title-block-center">
-                            <div className="titleContainer-center">
-                                <div className="iOS11Icon"><img src={iOS11Icon}/></div>
+                    <div className="section-4">
+                        <div className="title-block-4">
+                            <div className="titleContainer-4">
+                                <div className="iOS11Icon"><img className="iOS11L" src={iOS11Icon}/></div>
                                 <h2 className="typographyHeadline">A giant step for iPhone.</h2>
                                 <p className="description">iOS 11 makes iPhone so smart, it learns  from you. So capable, it helps you in more personal ways. And so useful, it's more powerful than ever.</p>
                                 <h2 className="checkMeOut">Learn more about iOS 11 </h2>
