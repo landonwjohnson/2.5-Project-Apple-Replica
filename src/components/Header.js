@@ -39,33 +39,29 @@ export default class Header extends React.Component {
         this.setState({mobileNavOpen: false})
         this.setState({isHeaderBlack: false})
         if(this.state.cartMenuOpen){
-            this.setState({cartMenuOpen: false})
+            this.setState({
+                cartMenuOpen: false,
+            })
         }
         else {
-            this.setState({cartMenuOpen: true})
+            this.setState({
+                cartMenuOpen: true,
+            })
         }
     }
 
     handleMobileNavClick(){
         console.log('mobile click test')
         this.setState({cartMenuOpen: false})
-        
         if(this.state.mobileNavOpen){
-            
             this.setState({mobileNavOpen: false})
-            this.setState({isHeaderBlack: false})
         }
-
-        
-        else {
-            
+        else {            
             this.setState({mobileNavOpen: true})
-            this.setState({isHeaderBlack: true})
         }
     }
 
     handleSearchClick(){
-        console.log('search click test')
         this.setState({cartMenuOpen: false})
         
         if(this.state.searchOpen) {
@@ -78,7 +74,6 @@ export default class Header extends React.Component {
             this.setState({searchOpen: true})
             this.setState({navLinkShow: true})
             this.setState({isHeaderBlack: true})
-            
         }
     }
 
@@ -104,6 +99,11 @@ export default class Header extends React.Component {
             "bagview-content": true
         })
 
+        var bagBackDropClass = classnames({
+            "bag-backdrop--show": this.state.cartMenuOpen,
+            "bag-backdrop--hide": false
+        })
+
         var mobileNavClasses = classnames({
             "mobile-nav--show": this.state.mobileNavOpen,
             "mobile-nav": true
@@ -127,20 +127,19 @@ export default class Header extends React.Component {
 
         return (
             <div>
-                <div className={headerColor}>
-                    
+                <div className={headerColor}> 
                     <ul className="nav">
                         <li className="menuicon-bread" onClick={this.handleMobileNavClick}><div id="nav-toggle" onClick={mobileNavX} href="#"  ><div className="bread-menu"><span className="top"></span><span className="bottom"> </span></div></div> </li>
-                        <li className="appleIcon"><Link to="/" onClick={this.handleAppleClick}><img src={AppleIcon}/> </Link></li>
+                        <li className="appleIcon"><img src={AppleIcon}/></li>
                         <div className={searchClasses} >
                         <img className="searchform-icon" src={SearchIcon}/><input className="searchform-input" placeholder="Search apple.com" maxLength={70} />
                         <div id="close-search-toggle" onClick={this.handleSearchClick}> <div className="close-search" /> <span className="left"></span> <span className="right"> </span></div></div> 
-                        <li className={navLink}><Link to="/Mac"> Mac</Link></li>
+                        <li className={navLink}>Mac</li>
                         <li className={navLink}>iPad</li>
-                        <li className={navLink}><Link to="/iPhone"> iPhone </Link></li>
+                        <li className={navLink}>iPhone</li>
                         <li className={navLink}>Watch</li>
                         <li className={navLink}>TV</li>
-                        <li className={navLink}><Link to="/Music"> Music </Link></li>
+                        <li className={navLink}> Music</li>
                         <li className={navLink}>Support</li>
                         <li className={navLink} onClick={this.handleSearchClick}><img className="searchIcon" src={SearchIcon} /></li>
                         <li className="cartIcon" onClick={this.handleCartClick}  ><img src={CartIcon} /> </li>
@@ -148,6 +147,7 @@ export default class Header extends React.Component {
                     
                 </div>
                 <div className="bag-wrapper">
+                <div className={bagBackDropClass} onClick={this.handleAppleClick} />
                 <div className={bagClasses}>
                     <p> Your Bag is empty. </p>
                         <ul>
@@ -162,12 +162,12 @@ export default class Header extends React.Component {
                 </div>
                 <div className={mobileNavClasses}>
                     <ul>
-                        <li className="m-nav-list" ><Link to="/Mac"   onClick={this.handleMobileNavClick}>Mac</Link></li>
+                        <li className="m-nav-list" >Mac</li>
                         <li className="m-nav-list">iPad</li>
-                        <li className="m-nav-list"><Link to="/iPhone" onClick={this.handleMobileNavClick}>iPhone</Link></li>
+                        <li className="m-nav-list">iPhone</li>
                         <li className="m-nav-list">Watch</li>
                         <li className="m-nav-list">TV</li>
-                        <li className="m-nav-list"><Link to="/Music"  onClick={this.handleMobileNavClick}> Music </Link></li>
+                        <li className="m-nav-list"> Music</li>
                         <li className="m-nav-list">Support</li>
                     </ul>  
                 </div>

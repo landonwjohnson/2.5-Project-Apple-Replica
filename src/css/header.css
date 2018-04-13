@@ -190,6 +190,7 @@ a:hover{
         outline: none;
         left: 19%;
         animation: searchinput 0.5s ease-in-out;
+        background-color: black;
       }
 
       @keyframes searchinput {
@@ -266,31 +267,20 @@ a:hover{
   }
 
   .mobile-nav {
-    display: none;
-    height: 100%;
+    opacity: 0;
+    height: 0vh;
     background: black;
     position: fixed;
-    z-index: 9998;
-    padding-right: 48px; 
+    z-index: -1;
+    padding-right: 48px;
     padding-left: 48px;
     right: 0;
     left: 0;
-    animation: 
-    
-      mobilenav 1s ,
-      forwards 1s ;
+    top: 0;
+    transition: 0.5s ease-in-out;
   }
 
-  @keyframes mobilenav {
-    0%{
-      opacity: 0;
-      height: 0%;
-    }
-    100% {
-      opacity: 1;
-      height: 100%;
-    }
-  }
+
 
   @keyframes searchbar {
     0%{
@@ -326,10 +316,6 @@ a:hover{
     white-space: nowrap;
     font-weight: 400;
     height: 33px;
-    
-    
-     
-    
   }
 
   .m-nav-list li {
@@ -346,14 +332,15 @@ a:hover{
   .mobile-nav ul {
     list-style-type: none;
     padding: 0;
-    
   }
-
-
 
   .mobile-nav--show {
     display: block;
     position: fixed;
+    z-index: 1;
+    height: 100vh;
+    opacity: 1;
+    padding-top: 44px;
   }
   /*shopping bag*/
   
@@ -361,7 +348,7 @@ a:hover{
     position: absolute;
     display: block;
     max-width: 990px;
-    left: 68%;
+    /* left: 68%; */
     }
     .cart-menu-icons {
       display: inline;
@@ -382,10 +369,31 @@ a:hover{
       border-radius: 2px;
       border: 2px solid #d6d6d6;
       margin-right: 24px;
+      left: 68%;
     }
+
+
 
     .bagview-content--show {
       display: block;
+    }
+
+    .bag-backdrop--show{
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      background-color: transparent;
+      z-index: 2;
+      display: block;
+    }
+
+    .bag-backdrop--hide{
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      background-color: white;
+      z-index: 2;
+      display: none;
     }
 
     .bagview-content p {
@@ -420,45 +428,45 @@ a:hover{
 }
 @media only screen and (max-width: 912px) {
     .bag-wrapper{
-        display: block;
-        width: 100%;
-        max-width: 912px;
-        left: 0;
-        right: 0;
+          display: block;
+          width: 100%;
+          max-width: 912px;
+          left: 0;
+          right: 0;
         }
     .cart-menu-icons {
-    display: inline;
-    max-width: 15px;
+      display: inline;
+      max-width: 15px;
     }
     
     .bagview-content{
-    display: none;
-    z-index: 2;
-    background-color: white;
-    border: solid 1px;
-    position: fixed;
-    border-radius: 2px;
-    border: 2px solid #d6d6d6;
-    margin: 0px;
-    width: 100%;
-    max-width: 912px;
+      display: none;
+      z-index: 2;
+      background-color: white;
+      border: solid 1px;
+      position: fixed;
+      border-radius: 2px;
+      border: 2px solid #d6d6d6;
+      margin: 0px;
+      width: 100%;
+      max-width: 912px;
     }
 
     .bagview-content--show {
-    display: block;
-    width: 100%;
+      display: block;
+      width: 100%;
     }
 
     .bagview-content p {
-    text-align: center;
-    color: #888;
-    display: block;
+      text-align: center;
+      color: #888;
+      display: block;
     }
 
     .bagview-content ul {
-    display: block;
-    width: 100%;
-    padding: 0px;
+      display: block;
+      width: 100%;
+      padding: 0px;
     }
 
     .bagview-content li {
@@ -485,6 +493,10 @@ a:hover{
         z-index: 9999;
     }
 
+    .bagview-content{
+      left: 0%;
+    }
+
     .ac-gn-header ul {
       display: flex;
       justify-content: space-between;
@@ -492,13 +504,10 @@ a:hover{
     .searchform-wrapper--show {
         display: none !important;
     }
-    
     .nav {
         width: 100%;
         position: fixed;
         margin: 0px;
-        
-
     }
     .nav li {
         display: none;
@@ -510,7 +519,6 @@ a:hover{
         width: 44px;
         color: white;
     }
-
     .nav .appleIcon {
         display: flex;
     }
@@ -529,11 +537,6 @@ a:hover{
     .cartIcon img {
       height: 24px;
     }
-
-    
-
-
-
     
     .bread-menu {
       display: flex;
