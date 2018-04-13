@@ -30,8 +30,6 @@ export default class Header extends React.Component {
         this.handleMobileNavClick = this.handleMobileNavClick.bind(this);
         this.handleSearchClick = this.handleSearchClick.bind(this);
         this.handleAppleClick = this.handleAppleClick.bind(this);
-        
-      
     }
 
    
@@ -91,16 +89,6 @@ export default class Header extends React.Component {
     }
 
 
-
-        
-    
-
-    
-
-    
-
-
-    
     render() {
 
         let mobileNavX = function() {
@@ -111,7 +99,6 @@ export default class Header extends React.Component {
             document.getElementById("close-search-toggle").classList.toggle("active");
         }
 
-        
         var bagClasses = classnames({
             "bagview-content--show": this.state.cartMenuOpen,
             "bagview-content": true
@@ -138,14 +125,12 @@ export default class Header extends React.Component {
         })
         
 
-        
-    
         return (
             <div>
                 <div className={headerColor}>
                     
                     <ul className="nav">
-                        <li className ="menuicon-bread" onClick={this.handleMobileNavClick}><div id="nav-toggle" onClick={mobileNavX} href="#"  ><div className="bread-menu"><span className="top"></span><span className="bottom"> </span></div></div> </li>
+                        <li className="menuicon-bread" onClick={this.handleMobileNavClick}><div id="nav-toggle" onClick={mobileNavX} href="#"  ><div className="bread-menu"><span className="top"></span><span className="bottom"> </span></div></div> </li>
                         <li className="appleIcon"><Link to="/" onClick={this.handleAppleClick}><img src={AppleIcon}/> </Link></li>
                         <div className={searchClasses} >
                         <img className="searchform-icon" src={SearchIcon}/><input className="searchform-input" placeholder="Search apple.com" maxLength={70} />
@@ -163,7 +148,6 @@ export default class Header extends React.Component {
                     
                 </div>
                 <div className="bag-wrapper">
-             
                 <div className={bagClasses}>
                     <p> Your Bag is empty. </p>
                         <ul>
